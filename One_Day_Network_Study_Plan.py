@@ -6,7 +6,7 @@ c=['Start Time','End Time','Count']
 l1=[]
 n1=int(input('Enter the number of datasets collected at control station'))
 n=n1
-t1=pd.Timestamp(input('Enter start time in the exact format H:M or DD-MM-YYYY H:M'))
+t1=pd.Timestamp(input('Enter start time in the exact format H:M'))
 t=t1
 f1=pd.Timedelta(input('Enter time interval in the format x hours and/or y minutes'))
 f=f1
@@ -14,10 +14,11 @@ l=[t]
 for i in range (n):
     t+=f
     l.append(t)
+    
 for i in range(n):
     l2=[np.nan for j in range(3)]
-    l2[0]=l[0]
-    l2[1]=l[1]
+    l2[0]=l[0].time()
+    l2[1]=l[1].time()
     l.pop(0)
     print('Enter vehicle count between',l2[0],'and',l2[1])
     l2[2]=int(input())
@@ -27,7 +28,6 @@ d1=d1.set_index(['Start Time','End Time'])
 string1='Proportion of '+str(n)+' Volume'
 d1[string1]=d1['Count']/np.sum(d1['Count'])
 print(d1)
-
 print('Enter the Data for Coverage-Count Data')
 c=['Location','Start Time','End Time','Count']
 l1=[]
