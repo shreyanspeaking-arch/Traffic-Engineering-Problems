@@ -63,6 +63,3 @@ string2='Estimated '+str(n1)+' hour volume'
 d2[string2]=d2['Count']/d1[string1].iloc[:len(d2)]
 d2['Estimated Peak Hour Volume']=(d2[string2]*np.max(d1[string1])).astype(int)
 print(d2)
-with pd.ExcelWriter('One_Day_Network_Study_Plan.xlsx') as w:
-    d1.to_excel(w,sheet_name='Control_Count_Data',index=False)
-    d2.to_excel(w,sheet_name='Coverage_Count_Data',index=False)
