@@ -29,11 +29,13 @@ index=pd.MultiIndex.from_tuples(index)
 df=pd.DataFrame(l,columns=column,index=index)
 for i in range(1,d*2,2):
     df.iloc[i]=((df.iloc[i-1])/np.sum(df.iloc[i-1]))*100
+print('Control data and calibration of hourly variation pattern')
 print(df)
 df2=df.iloc[::s].copy()
 string2=str(h)+'-Hour Control Count Location A (vehs)'
 df2[string2]=np.nansum(df2,axis=1)
 df2['Adjustment Factor']=np.nanmean(df2[string2])*((df2[string2])**(-1))
+print('Calibration of daily variation factors')
 print(df2)
 index=list(index)
 index=index[::s]
@@ -52,7 +54,6 @@ for i in range(ts):
     l1[2]=int(input())
     l+=[l1]
 df3=pd.DataFrame(l,index=index2,columns=['Station Name','Slot','Count'])
-print(df3)
 df3[str(h)+'-Hour Expanded Count (vehs)']=np.nan
 m=list(df3.index)
 pos1=list(df3.columns).index(str(h)+'-Hour Expanded Count (vehs)')
@@ -65,5 +66,6 @@ pos1=list(df3.columns).index(str(h)+'-Hour Expanded Count (vehs)')
 pos2=list(df3.columns).index(str(h)+'-Hour Adjusted Counts (vehs)')
 for i in range(len(m)):
     df3.iloc[i,pos2]=df3.iloc[i,pos1]*df2.loc[m[i],'Adjustment Factor']
+print('Expansion and adjustment of coverage counts')
 print(df3)
 
