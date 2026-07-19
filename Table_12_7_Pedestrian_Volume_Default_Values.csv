@@ -1,0 +1,6 @@
+General Level of Pedestrian Activity,Default Value for PedVol
+high,3200
+medium - high,1500
+medium,700
+medium - low,240
+low,50

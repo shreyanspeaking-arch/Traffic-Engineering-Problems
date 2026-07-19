@@ -1,0 +1,9 @@
+Category,Condition,Value
+Bus Stops,0,1.0
+Bus Stops,1 or 2,2.78
+Bus Stops,3 or more,4.15
+Schools,0,1.0
+Schools,1 or more,1.35
+Stores Selling Alcohol,0,1.0
+Stores Selling Alcohol,1-8,1.12
+Stores Selling Alcohol,9 or more,1.56
