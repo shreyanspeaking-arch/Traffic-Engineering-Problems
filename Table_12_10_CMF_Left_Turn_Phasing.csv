@@ -1,0 +1,4 @@
+Type of LT Phasing,1,2,3,4
+Permitted,1.0,1.0,1.0,1.0
+"Protected + Permitted, or Permitted + Protected",0.99,0.98,0.97,0.96
+Protected,0.94,0.88,0.83,0.78
