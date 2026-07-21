@@ -30,7 +30,7 @@ l3=[]
 for i in range(1000):
     l3+=[Q.subs(V,float(l2[i]))] 
 fig,ax=plt.subplots(2,1,figsize=(9,9))
-fig.suptitle("Greenshields Model", fontsize=16)
+fig.suptitle("Greenberg Model", fontsize=16)
 ax[0].plot(l1,l2,color='red')
 ax[0].set_title('Speed vs Density Graph')
 ax[0].set_xlabel('Traffic Density in veh/km')
