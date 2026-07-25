@@ -3,8 +3,11 @@ import numpy as np
 import math as m
 import sys
 import scipy.interpolate as scpi
+import scipy.stats as scpst
 import matplotlib.pyplot as plt
 uspeed=input('Enter the units of all speeds that will be entered, and make sure all are the same')
+e=float(input('Enter maximum acceptable percentage error <x>% in results'))
+pcount=int(input('Enter the number of points to be used for plotting the graph to make it perfect. Recommended more than 1000.'))
 print('''Enter 1 if you want to enter values one by one (Good for manual counting) or
 Enter 2 if you have the intervals and number of vehicles for each of them (For database not yet created) or
 Enter 3 if you have a .csv or .xlsx file to import''')  
@@ -64,8 +67,8 @@ elif co==3:
 else:
     print('Wrong input')
     sys.exit()
+df=df.sort_index()
 df['Observed Vehicles(n)']=df['Observed Vehicles(n)'].astype(int)
-print(df)
 df=df.reset_index()
 df['Middle Speed (S)']=(df['Lower Limit']+df['Upper Limit'])/2
 df['% Frequency']=(df['Observed Vehicles(n)']/np.sum(df['Observed Vehicles(n)']))*100
@@ -76,23 +79,37 @@ for i in range(len(df)):
     df.iloc[i,p2]=np.sum(df.iloc[:i+1,p1])
 df['nS']=df['Middle Speed (S)']*df['Observed Vehicles(n)']
 df['nS²']=df['Observed Vehicles(n)']*((df['Middle Speed (S)'])**2)
-df2=df.copy()
-df2=df2.rename(columns={'Lower Limit':'Lower Limit in '+uspeed,'Upper Limit':'Upper Limit in '+uspeed,'Middle Speed (S)':'Middle Speed (S) in '+uspeed})
-df2=df2.set_index(['Lower Limit in '+uspeed,'Upper Limit in '+uspeed,'Middle Speed (S) in '+uspeed])
-print(df2)
-df2=df2.reset_index()
-f2=input('Enter the desired output filename. Dont include .xlsx')
-df2.to_excel(f2+'.xlsx',index=False)
 l1=df['Middle Speed (S)'].tolist()
-l1new=np.linspace(min(l1),max(l1),10000).tolist()
+l1new=np.linspace(min(l1),max(l1),pcount).tolist()
 l2=df['% Frequency'].tolist()
 spline1=scpi.PchipInterpolator(l1,l2)
 l2new=spline1(l1new)
 l3=df['Upper Limit'].tolist()
-l3new=np.linspace(min(l3),max(l3),10000).tolist()
+l3new=np.linspace(min(l3),max(l3),pcount).tolist()
 l4=df['Cumulative % Frequency'].tolist()
 spline2=scpi.PchipInterpolator(l3,l4)
 l4new=spline2(l3new)
+co3=0
+median=0
+for i in l3new:
+    if spline2(i)<=50*(1+(e/100)) and spline2(i)>=50*(1-(e/100)):
+        median+=i
+        co3+=1
+if co3>0:
+    median/=co3
+else:
+    median=np.nan
+co4=0
+mode=0
+maxl2=np.max(l2new)
+for i in l1new:
+    if spline1(i)<=maxl2*(1+(e/100)) and spline1(i)>=maxl2*(1-(e/100)):
+        mode+=i
+        co4+=1
+if co4>0:
+    mode/=co4
+else:
+    mode=np.nan
 fig,ax=plt.subplots(2,1,figsize=(8,6))
 ax[0].scatter(l1,l2,color='red',label='Original Points')
 ax[0].plot(l1new,l2new,color='navy',label='Approximate Curve')
@@ -110,3 +127,68 @@ ax[1].grid(True,alpha=0.7,linestyle='--')
 ax[1].legend()
 plt.tight_layout()
 plt.show()
+df=df.rename(columns={'Lower Limit':'Lower Limit in '+uspeed,'Upper Limit':'Upper Limit in '+uspeed,'Middle Speed (S)':'Middle Speed (S) in '+uspeed})
+df=df.set_index(['Lower Limit in '+uspeed,'Upper Limit in '+uspeed])
+df=df.sort_index(ascending=False)
+df=df.reset_index()
+df['Upper Limit in '+uspeed]=df['Upper Limit in '+uspeed].astype('float64')
+df['Lower Limit in '+uspeed]=df['Lower Limit in '+uspeed].astype('float64')
+df.loc[list(df.index)[0],'Upper Limit in '+uspeed]=np.inf
+df.loc[list(df.index)[-1],'Lower Limit in '+uspeed]=-np.inf
+N=np.nansum(df['Observed Vehicles(n)'])
+mean=np.nansum(df['nS'])/N
+var=(np.nansum(df['nS²'])-(N*(mean**2)))/(N-1)
+std=var**0.5
+df['z']=(df['Upper Limit in '+uspeed]-mean)/std
+df['Probability of occurence (z≤zd)']=scpst.norm.cdf(df['z'])
+for i in range(len(df)-1):
+    df.loc[list(df.index)[i],'Probability of occurence (z≤zd)']=df.loc[list(df.index)[i],'Probability of occurence (z≤zd)']-df.loc[list(df.index)[i+1],'Probability of occurence (z≤zd)']
+df['Theoretical Frequency f']=N*df['Probability of occurence (z≤zd)']
+co=0
+d1={}
+d2={}
+while co<=(len(df)-1):
+    m=df.loc[list(df.index)[co],'Observed Vehicles(n)']
+    n=df.loc[list(df.index)[co],'Theoretical Frequency f']
+    if m<=5:
+        le=()
+        le+=co,
+        co+=1
+        while m<=5:
+            m+=df.loc[list(df.index)[co],'Observed Vehicles(n)']
+            n+=df.loc[list(df.index)[co],'Theoretical Frequency f']
+            le+=co,
+            co+=1
+        d1[le]=m
+        d2[le]=n
+    else:
+        le=co
+        d1[le]=m
+        d2[le]=n
+        co+=1
+df['Combined Group Observed Frequency (n)']=[np.nan for i in range(len(df))]
+df['Combined Group Theoretical Frequency (f)']=[np.nan for i in range(len(df))]
+for k in d1:
+    if isinstance(k,int):
+        df.loc[list(df.index)[k],'Combined Group Observed Frequency (n)']=d1[k]
+        df.loc[list(df.index)[k],'Combined Group Theoretical Frequency (f)']=d2[k]
+    elif isinstance(k,tuple):
+        df.loc[list(df.index)[k[-1]],'Combined Group Observed Frequency (n)']=d1[k]
+        df.loc[list(df.index)[k[-1]],'Combined Group Theoretical Frequency (f)']=d2[k]
+df['Chi-Square Group χ²']=((df['Combined Group Observed Frequency (n)']-df['Combined Group Theoretical Frequency (f)'])**2)/df['Combined Group Theoretical Frequency (f)']
+print(df)
+chsum=np.nansum(df['Chi-Square Group χ²'])
+defredm=len(df['Chi-Square Group χ²'].dropna())-3
+P=float(scpst.chi2.sf(chsum,defredm))
+print('The average value of spot speed is ',mean,uspeed)
+print('The variance of the spot speed data is',var)
+print('The standard deviation of spot speed data is',std)
+print('The median speed is ',median,uspeed)
+print('The mode speed/ most frequent speed is',mode,uspeed)
+print('The P value is ',P)
+if P<=0.05:
+    print('There is a significant difference and speeds do not closely follow a normal distribution')
+else:
+    print('There is not much significant difference and speeds fit well in a normal distribution curve')
+f=input('Enter the desired output filename. Dont include .xlsx')
+df.to_excel(f+'.xlsx',index=False)
