@@ -7,6 +7,6 @@ This repository has 3 sub-branches as of 28th July 2026.
   	
     c.	Additionally, some of the programs have sample output files. Each of these files have the name of the program from which they have been made and what was the input file/ sample input on the output page of the python program, in the details of commit section.
   	
-2.  Book_Notes: I have made this for my personal use. But in case someone wants to use them as short notes for books mentioned they are free to do so.
+2.  Book_Notes: I have made this for my personal use. But in case someone wants to use them as short notes for books mentioned they are free to do so. I have made the programs by studying various problems from these books.
 
 3.	Collected-Research-Papers-from-Online: This also has been made for my personal use, and it contains some of the research papers I like reading. Someone who is interested can check it out.
