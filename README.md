@@ -1,4 +1,4 @@
-This repository has 3 sub-branches as of 28th July,2026. 
+This repository has 3 sub-branches as of 28th July, 2026. 
   1. Python-Programs-for-Various-Problems:
      a. The main content of this repository i.e. the programs which solve various kinds of problems is present in the Python-Programs-for-Various-Problems Sub Branch.
      b. Additionally, it consists of input files that can be used to run the programs (optional) in case the user does not have any input file to test these programs.
