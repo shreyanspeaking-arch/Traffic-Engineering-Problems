@@ -14,8 +14,3 @@ t=W+(1/dn)
 print('The average number of vehicles in queue is ',Q)
 print('The average waiting time per vehicle in queue is ',W,' min or ',W*60,'s')
 print('The average queuing time is ',t,' min or ',t*60,'s')
-
-
-
-
-
