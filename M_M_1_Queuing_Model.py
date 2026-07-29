@@ -21,7 +21,7 @@ elif co==3:
     dn/=t
 else:
     sys.exit()
-print('''Press 1 if you have average rate of vehicles in veh/min
+print('''Press 1 if you have average arrival rate of vehicles in veh/min
 Press 2 if you have the no of arrivals within a timeframe and the time taken''')
 co=int(input())
 if co==1:
