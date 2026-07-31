@@ -183,4 +183,3 @@ else:
 plt.grid(True,alpha=0.7)
 plt.tight_layout()
 plt.show()
-print(n)
