@@ -1,0 +1,5 @@
+Start Time,End Time,Arrival Rate (in veh/h/ln),No. of lanes used for arrival,Departure Rate (in veh/h/ln),No. of lanes used for departure
+08:00:00,09:00:00,2000.0,2.0,1800.0,2.0
+09:00:00,10:00:00,2500.0,2.0,1800.0,2.0
+10:00:00,11:00:00,3000.0,2.0,1800.0,2.0
+11:00:00,,1500.0,2.0,1800.0,2.0
