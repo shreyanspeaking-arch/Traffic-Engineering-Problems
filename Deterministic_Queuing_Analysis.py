@@ -165,3 +165,22 @@ df.loc[list(df.index)[len(df)-1],'Size of Queue (veh)']=np.nan
 print(df)
 f=input('Enter name of output filename. Dont include .xlsx')
 df.to_excel(f+'.xlsx',index=False)
+l=[]
+s3=pd.to_datetime(str(pd.Timestamp.today().date())+' '+str(list(df['End Time'])[0]))
+for i in list(df['End Time'])[:-1]:
+    j=pd.to_datetime(str(pd.Timestamp.today().date())+' '+str(i))
+    l+=[(j-s3.normalize()).total_seconds()]
+l+=[(eqt-s3.normalize()).total_seconds()]
+plt.figure(figsize=(10,8))
+plt.title('Size of Queue vs End Time')
+plt.plot(l,list(df['Size of Queue (veh)'])[:-1]+[0],color='maroon')
+plt.xlabel('End Time')
+plt.ylabel('Size of Queue (veh)')
+if n==0:
+    plt.xticks(l,list(df['End Time'])[:-1]+[eqt.time()],rotation=45,ha='right')
+else:
+    plt.xticks(l,list(df['End Time'])[:-1]+[str(eqt.time())+','+str(n)+'D'],rotation=45,ha='right')
+plt.grid(True,alpha=0.7)
+plt.tight_layout()
+plt.show()
+print(n)
