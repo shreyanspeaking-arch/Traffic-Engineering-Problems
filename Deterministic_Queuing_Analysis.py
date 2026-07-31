@@ -152,11 +152,16 @@ if ci is not None and ci<len(df)-1:
 if pd.isna(df.loc[list(df.index)[len(df)-1],'End Time']):
     print('Assuming that arrival and departure rates after ',df.loc[list(df.index)[len(df)-1],'Start Time'],' is constant')
 h=df.loc[list(df.index)[len(df)-2],'Size of Queue (veh)']/abs(df.loc[list(df.index)[len(df)-1],col[col.index('Arrivals (veh)')]]-df.loc[list(df.index)[len(df)-1],col[col.index('Departures (veh)')]])
-s=str(pd.Timestamp.today().date())+' '+str(df.loc[list(df.index)[len(df)-1],'Start Time'])
-eqt=(pd.to_datetime(s)+pd.to_timedelta(h,unit='h')).time()
-print('The queue clears at ',eqt)
+s1=str(pd.Timestamp.today().date())+' '+str(df.loc[list(df.index)[0],'Start Time'])
+s2=str(pd.Timestamp.today().date())+' '+str(df.loc[list(df.index)[len(df)-1],'Start Time'])
+s1=pd.to_datetime(s1)
+eqt=(pd.to_datetime(s2)+pd.to_timedelta(h,unit='h'))
+n=(eqt-s1).days
+if n==0:
+    print('The queue clears at ',eqt.time())
+else:
+    print('The queue clears at ',eqt.time(),' after ',n,' day(s)')
 df.loc[list(df.index)[len(df)-1],'Size of Queue (veh)']=np.nan
 print(df)
 f=input('Enter name of output filename. Dont include .xlsx')
 df.to_excel(f+'.xlsx',index=False)
-
