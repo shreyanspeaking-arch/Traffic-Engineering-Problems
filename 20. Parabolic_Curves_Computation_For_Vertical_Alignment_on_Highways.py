@@ -12,15 +12,14 @@ p/=100
 print('Enter slope with sign at '+str(t2)+' in %')
 q=float(input())
 q/=100
-print('''Choose what you want to get:
-         1. K value of highway (Horizontal distance required for 1% change in grade
-         2. Coordinates of a point on the curve (requires x-coordinate)
-         3. Vertical offset(e) at the point of intersection of two tangents
-         4. Vertical offset at a point of the curve (requires x-coordinate)
-         5. Horizontal and Vertical Offsets at the highest point on the curve
-         ''')
 c=''
 while c.upper()!='N':
+    print('''Choose what you want to get:
+1. K value of highway (Horizontal distance required for 1% change in grade
+2. Coordinates of a point on the curve (requires x-coordinate)
+3. Vertical offset(e) at the point of intersection of two tangents
+4. Vertical offset at a point of the curve (requires x-coordinate)
+5. Horizontal and Vertical Offsets at the highest point on the curve''')
     o=int(input('Enter the number for the option you want to select'))
     if o==1:
         K=L/((p-q)*100)
