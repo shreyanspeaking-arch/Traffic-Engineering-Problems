@@ -1,4 +1,4 @@
-The following are the names of the programs that have been added in this repository as of 3rd August, 2026. Every program in it’ s filename is numbered accordingly.
+The following are the names of the programs that have been added in this repository as of 3rd August, 2026. Every program in it’ s filename is numbered accordingly. Follow the numbers for tracing files somehow related to that program. Like suppose for 2. <Program.py>, all the files related to this program like sample input and output have the number 2. before their filename.
 All the files that are not .py files are either sample input or sample output files of all the programs mentioned below. Check the commit section of each file to see details. 
 Most/All of the sample input csv files are AI generated, either using prompts requesting for dataframe formats containing random, but realistic data that can be used for testing the specific program
 or prompts which just create csv files from the photo of printed tables present in sample problems of certain books. 
