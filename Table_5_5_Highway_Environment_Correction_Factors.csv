@@ -1,0 +1,3 @@
+Highway_classification,Divided,Undivided
+Rural,1,0.95
+Urban/suburban,0.9,0.8
