@@ -9,7 +9,7 @@ for i in range(n):
         print('Enter the no of trips with origin as zone',i+1,'and destination as zone',j+1)
         k[j]=int(input())
     l+=[k]
-a=pd.DataFrame(l,index=[i for i in range(1,n+1)],columns=[i for i in range(1,n+1)])
+a=pd.DataFrame(l,index=[i for i in range(1,n+1)],columns=[i for i in range(1,n+1)]).astype('float64')
 j=[0 for i in range(n)]
 k=[0 for i in range(n)]
 for i in range(n):
