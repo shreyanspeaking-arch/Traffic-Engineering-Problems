@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import datetime as dt
+import sys
 print('Enter the Data for Control-Count Data')
 c=['Start Time','End Time','Count']
 l1=[]
@@ -38,9 +39,9 @@ if n2>=n:
         n2=int(input('Enter the number of coverage stations'))
         if n2>=n:
             print('Wrong Value')
-            quit()
+            sys.exit()
     else:
-        quit()
+        sys.exit()
 n=n2
 t=t1
 f=f1
