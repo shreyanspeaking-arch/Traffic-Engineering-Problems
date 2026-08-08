@@ -1,4 +1,3 @@
-import numpy as np
 print('''Press 1 if you have average headway of vehicles in s
 Press 2 if you have average departure rate of vehicles in veh/min''')
 co=int(input())
