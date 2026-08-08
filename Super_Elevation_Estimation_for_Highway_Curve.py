@@ -17,7 +17,7 @@ f=float(input('Enter coefficient of side friction between vehicle tyres and pave
 f1=((v**2)/(127*R))-e1
 if f1<=f:
     print('Superelevation of',e1,'is safe')
-    quit()
+    sys.exit()
 else:
     f1=f
     print('Maximum calculated speed is calculated considering superelevation as',e1,'and coefficient of friction as',f1)
