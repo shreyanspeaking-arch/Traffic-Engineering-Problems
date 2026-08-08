@@ -51,7 +51,7 @@ elif co==3:
     if f[-4:]=='.csv':
         df=pd.read_csv(f)
     elif f[-5:]=='.xlsx':
-        df=pd.read_csv(f)
+        df=pd.read_excel(f)
     l=list(df.columns)
     print('The list of columns in this file is ',l)
     if 'Lower Limit' not in l:
@@ -147,14 +147,14 @@ df['Theoretical Frequency f']=N*df['Probability of occurence (z≤zd)']
 co=0
 d1={}
 d2={}
-while co<=(len(df)-1):
+while co<=len(df)-1:
     m=df.loc[list(df.index)[co],'Observed Vehicles(n)']
     n=df.loc[list(df.index)[co],'Theoretical Frequency f']
     if m<=5:
         le=()
         le+=co,
         co+=1
-        while m<=5:
+        while m<=5 and co<len(df):
             m+=df.loc[list(df.index)[co],'Observed Vehicles(n)']
             n+=df.loc[list(df.index)[co],'Theoretical Frequency f']
             le+=co,
