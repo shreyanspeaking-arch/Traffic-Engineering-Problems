@@ -1,12 +1,6 @@
-This repository has 3 sub-branches as of 28th July 2026. 
-1.	Python-Programs-for-Various-Problems:
+One_Day_Network_Study_Plan.py:
+1. This program estimates the total n-hour volume and peak-hour volume at each of m stations in a network, using the control-count/coverage-count expansion method.
+2. A control station's volume is recorded for each of n consecutive time slots.
+3. Each of the remaining m-1 (coverage) stations is recorded for only one time slot each, corresponding to the first m-1 slots of the control period (m-1 must be less than n).
+4. The control data yields the proportion of daily volume in each slot; each coverage count is divided by its corresponding slot's proportion to estimate that station's n-hour volume, then scaled by the control station's peak-slot proportion to estimate peak-hour volume. Results are exported to an Excel file.
 
-    a.	 The main content of this repository i.e. the programs which solve various kinds of problems is present in this sub-branch.
-  	
-    b.	Additionally, it consists of input files that can be used to run the programs (optional) in case the user does not have any input file to test these programs.
-  	
-    c.	Additionally, some of the programs have sample output files. Each of these files have the name of the program from which they have been made and what was the input file/ sample input on the output page of the python program, in the details of commit section.
-  	
-2.  Book_Notes: I have made this for my personal use. But in case someone wants to use them as short notes for books mentioned they are free to do so. I have made the programs by studying various problems from these books.
-
-3.	Collected-Research-Papers-from-Online: This also has been made for my personal use, and it contains some of the research papers I like reading. Someone who is interested can check it out.
