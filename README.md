@@ -13,8 +13,6 @@ Cordon-Count-Study:
 
 Curve-Fitting-for-Highways-and-Railways:
 
-  	Maximum_Permissible_Cant_and_Maximum_Permissible_Speed_on_Railway_Transition_Curve.py
-
   	Parabolic_Curves_Computation_For_Vertical_Alignment_on_Highways.py
 
   	Super_Elevation_Estimation_for_Highway_Curve.py
