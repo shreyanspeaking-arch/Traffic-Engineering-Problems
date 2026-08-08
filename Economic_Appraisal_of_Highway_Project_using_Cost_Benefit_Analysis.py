@@ -51,4 +51,5 @@ if Net_Present_Value>0:
     print('This project is acceptable with a Net Present Value of ',Net_Present_Value)
 else:
     print('This project is not suitable')
-d.to_excel('output_Program1.xlsx', sheet_name='Sheet1', index=False)
+f=input('Enter the filename in which you want the output data to be shown. Dont include .xlsx')
+d.to_excel(f+'.xlsx', sheet_name='Sheet1', index=False)
