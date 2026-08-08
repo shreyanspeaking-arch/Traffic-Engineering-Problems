@@ -2,7 +2,6 @@ import math as m
 import pandas as pd
 import sympy as sp
 import sys
-d=''
 AADTmaj=float(input('Enter average annual daily traffic on major street in veh/day'))
 AADTmin=float(input('Enter average annual daily traffic on minor street in veh/day'))
 a,b,c,A,B=sp.symbols('a b c A B')
@@ -79,7 +78,7 @@ elif co=='YES1':
 elif co=='YES2':
     pra=int(input('Enter the proportion of multivehicle crashes that are right angle collisions'))
     pre=int(input('Enter the proportion of multivehicle crashes that are rear end collisions'))
-    CMFRLC=1-(0.26*pra)+(0.18*pre)#'''
+    CMFRLC=1-(0.26*pra)+(0.18*pre)
 t6=pd.read_csv('Table_12_10_CMF_Left_Turn_Phasing.csv')
 t6=t6.set_index('Type of LT Phasing')
 t6=t6.rename(index={'Protected + Permitted, or Permitted + Protected':'Compound'})
