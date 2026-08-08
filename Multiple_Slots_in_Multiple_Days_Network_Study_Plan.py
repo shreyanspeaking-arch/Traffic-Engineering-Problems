@@ -5,6 +5,7 @@ column=[]
 d=int(input('Enter number of days'))
 s=int(input('Enter number of slots'))
 h=0
+print('For Control Station')
 for i in range(s):
     print('Enter start time for slot ',i+1,'in H:M')
     st=pd.to_datetime(input())
@@ -46,6 +47,7 @@ for i in list(index):
 column=column*d
 l=[]
 ts=d*s
+print('For Coverage Count Calculation')
 for i in range(ts):
     l1=[np.nan for i in range(3)]
     l1[0]=input('Enter Station Name')
@@ -68,4 +70,6 @@ for i in range(len(m)):
     df3.iloc[i,pos2]=df3.iloc[i,pos1]*df2.loc[m[i],'Adjustment Factor']
 print('Expansion and adjustment of coverage counts')
 print(df3)
-
+df3=df3.reset_index()
+f=input('Enter the output filename for printing out the table of expansion and adjustment of coverage counts. Exclude .xlsx')
+df3.to_excel(f+'.xlsx',index=False)
