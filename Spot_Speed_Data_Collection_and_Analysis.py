@@ -190,5 +190,19 @@ if P<=0.05:
     print('There is a significant difference and speeds do not closely follow a normal distribution')
 else:
     print('There is not much significant difference and speeds fit well in a normal distribution curve')
+co5=input('Do you want to find out any percentile speeds for this stretch of road. If yes press anything/enter and if No, enter <No>')
+while co5.upper()!='NO':
+    pctlespeed=float(input('Enter the percentile speed you want to find out'))
+    co6=0
+    sp=0
+    for i in l3new:
+        if spline2(i)<=pctlespeed*(1+(e/100)) and spline2(i)>=pctlespeed*(1-(e/100)):
+            sp+=spline2(i)
+            co6+=1
+    if co6>0:
+        print('The ',pctlespeed,' percentile speed is ',sp/co6,uspeed)
+    else:
+        print('Something went wrong. Try again')
+    co5=input('Do you want to find out any percentile speeds for this stretch of road. If yes press anything/enter and if No, enter <No>')
 f=input('Enter the desired output filename. Dont include .xlsx')
 df.to_excel(f+'.xlsx',index=False)
