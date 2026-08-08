@@ -55,6 +55,7 @@ for i in range(len(list(df1.index))):
 df2['Average Weekday Traffic (AWT)']=df2['Total Weekday Volume (veh)']/df2['No. of weekdays in month (days)']
 df2['Average Daily Traffic (ADT)']=df2['Total Monthly Volume (veh)']/df2['No. of days in month (days)']
 f=input('Enter the name of output file. Dont include .xlsx')
+df2=df2.reset_index()
 df2.to_excel(f+'.xlsx',index=False)
 AAWT=np.nansum(df2['Total Weekday Volume (veh)'])/np.nansum(df2['No. of weekdays in month (days)'])
 AADT=np.nansum(df2['Total Monthly Volume (veh)'])/np.nansum(df2['No. of days in month (days)'])
@@ -96,10 +97,3 @@ plt.ylabel('Vehicular Volumes')
 plt.grid(True,alpha=0.7)
 plt.tight_layout()
 plt.show()
-
-
-
-
-
-
-
