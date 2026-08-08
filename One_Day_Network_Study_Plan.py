@@ -63,3 +63,6 @@ string2='Estimated '+str(n1)+' hour volume'
 d2[string2]=d2['Count']/d1[string1].iloc[:len(d2)]
 d2['Estimated Peak Hour Volume']=(d2[string2]*np.max(d1[string1])).astype(int)
 print(d2)
+f=input('Enter output filename. Exclude .xlsx')
+d2=d2.reset_index()
+d2.to_excel(f+'.xlsx',index=False)
