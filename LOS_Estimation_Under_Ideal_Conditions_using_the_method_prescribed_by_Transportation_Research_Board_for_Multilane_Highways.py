@@ -22,7 +22,7 @@ if DS not in [i for i in range(50,80,10)]:
     sys.exit()
 C=t1.loc[DS,'Capacity']
 vbc=SF/(C*n)
-if vbc>1:
+if vbc>=1:
     print('Level of Service(LOS) for this highway is F')
     sys.exit()
 l2=list(t2.index)
