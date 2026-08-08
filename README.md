@@ -9,6 +9,7 @@ Greenberg_Model.py:
 2. The user enters the model's speed as a function of density, in the form of a natural logarithm expression involving traffic density K.
 3. The program solves this expression for the jam density, and evaluates the model at the density corresponding to maximum flow to obtain the optimum speed.
 4. The program computes and reports the roadway's capacity as the product of the optimum density and optimum speed, and plots speed against density and speed against volume over the full range of densities from just above zero up to jam density.
+
 For sample output containing the graphs it can generate, check Speed-Density and Speed-Volume Relationships Using Greenberg Model.png
 
 Greenshields_Model.py:
@@ -16,3 +17,5 @@ Greenshields_Model.py:
 2. The user enters the model's speed as a linear function of density, in the form of a straight line expression involving traffic density K.
 3. The program solves this expression for the free flow speed and the jam density, then derives the flow density relationship and finds the optimum speed at which flow is maximised.
 4. The program computes and reports the roadway's capacity as the product of the optimum density and optimum speed, and plots speed against density and speed against volume over the full range of densities from zero up to jam density.
+
+For sample output containing the graphs it can generate, check Speed-Density and Speed-Volume Relationships Using Greenshield' s Model.png
