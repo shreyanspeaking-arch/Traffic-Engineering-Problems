@@ -19,3 +19,10 @@ Greenshields_Model.py:
 4. The program computes and reports the roadway's capacity as the product of the optimum density and optimum speed, and plots speed against density and speed against volume over the full range of densities from zero up to jam density.
 
 For sample output containing the graphs it can generate, check Speed-Density and Speed-Volume Relationships Using Greenshield' s Model.png
+
+Modal_Split_based_on_Travel_expenses_and_Time_in_and_out_of_vehicle.py:
+
+1. This program estimates the modal split among competing modes of transport using a multinomial logit model based on user defined utility functions of in vehicle time, out of vehicle time, and travel expenses.
+2. For each mode, the user enters a utility function with numeric coefficients for in vehicle time, out of vehicle time, and travel cost, along with the actual time and cost components that make up each variable.
+3. The program computes each mode's utility, converts it to a probability share using the logit formula, and normalizes these shares across all modes.
+4. The user then chooses to either estimate ridership on each mode from a known total number of commuters, or to estimate ridership and vehicle counts on each mode from a known vehicle capacity, headway, and percentage of capacity filled for one reference mode, combined with a given modal split ratio and the average occupancy of each other mode.
