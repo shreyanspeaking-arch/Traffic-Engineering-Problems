@@ -5,6 +5,7 @@ column=[]
 d=int(input('Enter number of days'))
 s=int(input('Enter number of slots'))
 h=0
+print('For Control Station')
 for i in range(s):
     print('Enter start time for slot ',i+1,'in H:M')
     st=pd.to_datetime(input())
@@ -31,14 +32,14 @@ for i in range(1,d*2,2):
     df.iloc[i]=((df.iloc[i-1])/np.sum(df.iloc[i-1]))*100
 print('Control data and calibration of hourly variation pattern')
 print(df)
-df2=df.iloc[::s].copy()
+df2=df.iloc[::2].copy()
 string2=str(h)+'-Hour Control Count Location A (vehs)'
 df2[string2]=np.nansum(df2,axis=1)
 df2['Adjustment Factor']=np.nanmean(df2[string2])*((df2[string2])**(-1))
 print('Calibration of daily variation factors')
 print(df2)
 index=list(index)
-index=index[::s]
+index=index[::2]
 index2=[]
 for i in list(index):
     t=list(i)
@@ -46,6 +47,7 @@ for i in list(index):
 column=column*d
 l=[]
 ts=d*s
+print('For Coverage Count Calculation')
 for i in range(ts):
     l1=[np.nan for i in range(3)]
     l1[0]=input('Enter Station Name')
@@ -68,4 +70,6 @@ for i in range(len(m)):
     df3.iloc[i,pos2]=df3.iloc[i,pos1]*df2.loc[m[i],'Adjustment Factor']
 print('Expansion and adjustment of coverage counts')
 print(df3)
-
+df3=df3.reset_index()
+f=input('Enter the output filename for printing out the table of expansion and adjustment of coverage counts. Exclude .xlsx')
+df3.to_excel(f+'.xlsx',index=False)
