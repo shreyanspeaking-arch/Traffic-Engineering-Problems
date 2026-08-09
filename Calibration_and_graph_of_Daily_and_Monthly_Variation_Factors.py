@@ -74,10 +74,12 @@ while co2.upper()=='YES':
 if co!=0:
     AADT=so/co
 co3=input('Do you want to estimate Annual Vehicle Miles travelled. Enter <Yes> if you need it or just anything else/enter for aborting')
-if co3.upper()=='YES':
+if co3.upper()=='YES' and co!=0:
     L=float(input('Enter length of segment in km'))
     VMT365=AADT*365*L
-    print('Annual Vehicle Miles Travelled over the segment is ',VMT365,'vehicle-miles')
+    print('Annual Vehicle Miles Travelled over the segment is ',VMT365,'vehicle-km')
+else:
+    print('Average Annual Daily Traffic (AADT) has not been computed')
 fig,ax=plt.subplots(2,1,figsize=(12,12),constrained_layout=True)
 fig.suptitle('Variation of Daily and Monthly Variation Parameters')
 d2['Daily Adjustment Factor DF'].plot(kind='line',color='b',ax=ax[0])
@@ -93,7 +95,7 @@ ax[1].set_ylabel('Monthly Adjustment Factor MF')
 ax[1].set_xticks(range(len(d3)))
 ax[1].set_xticklabels(d3.index, rotation=45)
 plt.show()
-d2.reset_index()
-d3.reset_index()
+d2=d2.reset_index()
+d3=d3.reset_index()
 d2.to_excel('Daily_Variation_Factors_Data_Output.xlsx',index=False)
 d3.to_excel('Monthly_Variation_Factors_Data_Output.xlsx',index=False)
