@@ -38,3 +38,11 @@ Use_of_Multinomial_Logit_Model_for_the_Estimation_of_Modal_Split.py:
 2. The user enters the number of commuters, the number of available modes, and for each mode, a name and a utility function expressed in terms of cost and travel time.
 3. The user then enters the actual cost and travel time for each mode, and the program evaluates each mode's utility and converts it into a probability share using the logit formula, normalized across all modes.
 4. The program reports the probability of commuters choosing each mode and the corresponding estimated number of commuters using that mode between the given origin and destination.
+
+Underwood_Model.py:
+1. This program models a highway traffic stream using the Underwood exponential speed density model, computing capacity and plotting the corresponding speed density and speed volume relationships.
+2. The user enters the model's speed as an exponential function of density, in the form of an exponential decay expression involving traffic density K, along with a maximum density value used only to set the plotting range, since this model has no finite jam density.
+3. The program evaluates the free flow speed from this expression, computes the optimum speed at which flow is maximised, then solves the expression for the corresponding optimum density.
+4. The program computes and reports the roadway's capacity as the product of the optimum density and optimum speed, and plots speed against density and speed against volume over the chosen range of densities.
+
+For sample output containing the graphs it can generate, check Speed-Density and Speed-Volume Relationships Using Underwood's Model.png
