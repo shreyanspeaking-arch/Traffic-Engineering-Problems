@@ -57,7 +57,7 @@ else:
 if nrt==0:
     CMFRT=1
 elif nrt>=1 and nrt<=4:
-    CMRT=t5.loc[nrt,'RT Lane(s)']
+    CMFRT=t5.loc[nrt,'RT Lane(s)']
 else:
     print('Invalid Input')
     sys.exit()
@@ -76,8 +76,8 @@ elif co=='YES1':
     pre=nre/(nra+nre)
     CMFRLC=1-(0.26*pra)+(0.18*pre)
 elif co=='YES2':
-    pra=int(input('Enter the proportion of multivehicle crashes that are right angle collisions'))
-    pre=int(input('Enter the proportion of multivehicle crashes that are rear end collisions'))
+    pra=float(input('Enter the proportion of multivehicle crashes that are right angle collisions'))
+    pre=float(input('Enter the proportion of multivehicle crashes that are rear end collisions'))
     CMFRLC=1-(0.26*pra)+(0.18*pre)
 t6=pd.read_csv('Table_12_10_CMF_Left_Turn_Phasing.csv')
 t6=t6.set_index('Type of LT Phasing')
@@ -117,7 +117,7 @@ else:
 if nalcoholstore==0:
     CMFALC=t7.loc[('Stores Selling Alcohol','0'),'Value']
 elif nalcoholstore>=1 and nalcoholstore<=8:
-    CMFALC=t7.loc[('Stores Selling Alcohol','1 to 8'),'Value']
+    CMFALC=t7.loc[('Stores Selling Alcohol','1-8'),'Value']
 elif nalcoholstore>=9:
     CMFALC=t7.loc[('Stores Selling Alcohol','9 or more'),'Value']
 Npedpred=Npedbase*float(CMFSCH)*float(CMFBS)*float(CMFALC)
