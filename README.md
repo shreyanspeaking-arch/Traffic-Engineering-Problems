@@ -10,3 +10,9 @@ Spot_Speed_Data_Collection_and_Analysis.py:
 2. The program computes the frequency distribution of speeds, fits smooth interpolated curves to the frequency and cumulative frequency data, and derives the mean, variance, standard deviation, median, and modal speed from this distribution.
 3. The program fits a normal distribution to the observed data using the computed mean and standard deviation, performs a chi square goodness of fit test after combining bins with insufficient frequency, and reports whether the speed data significantly deviates from a normal distribution.
 4. The program plots the frequency and cumulative frequency curves against speed, and allows the user to look up the speed corresponding to any desired percentile, before exporting the full analysis to an Excel file.
+
+Sample Inputs/Outputs:
+speed_observation_data_Disclaimer_This_is_AI_Generated.csv → output2.xlsx + %_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_1.png
+Manual Input (Check commit history of output files) → output3.xlsx + %_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_2.png 
+Manual Input (Check commit history of output files) → output4.xlsx + %_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_3.png
+
