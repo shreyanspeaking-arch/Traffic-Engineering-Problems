@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import datetime as dt
+import sys
 print('Enter the Data for Control-Count Data')
 c=['Start Time','End Time','Count']
 l1=[]
@@ -38,9 +39,9 @@ if n2>=n:
         n2=int(input('Enter the number of coverage stations'))
         if n2>=n:
             print('Wrong Value')
-            quit()
+            sys.exit()
     else:
-        quit()
+        sys.exit()
 n=n2
 t=t1
 f=f1
@@ -63,3 +64,6 @@ string2='Estimated '+str(n1)+' hour volume'
 d2[string2]=d2['Count']/d1[string1].iloc[:len(d2)]
 d2['Estimated Peak Hour Volume']=(d2[string2]*np.max(d1[string1])).astype(int)
 print(d2)
+f=input('Enter output filename. Exclude .xlsx')
+d2=d2.reset_index()
+d2.to_excel(f+'.xlsx',index=False)
