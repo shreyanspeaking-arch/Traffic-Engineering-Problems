@@ -1,4 +1,4 @@
-This repository has 12 sub-branches as of 8th August 2026. 
+This repository has 12 sub-branches (excluding main) as of 8th August 2026. 
 
 Original-Branch-Disorganized:
 
