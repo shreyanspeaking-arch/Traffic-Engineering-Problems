@@ -1,12 +1,6 @@
-This repository has 3 sub-branches as of 28th July 2026. 
-1.	Python-Programs-for-Various-Problems:
+D_D_1_Queuing_Model.py:
+1. This program analyzes a deterministic D/D/1 queue at a single service point, using Kendall's notation where the first D denotes deterministic (fixed, non random) arrivals, the second D denotes deterministic departures or service times, and 1 denotes a single server or service channel. It computes queue dissipation time, maximum queue length, total vehicles served, average delay per vehicle, and average queue length, and plots cumulative arrivals and departures against time.
+2. The user enters the number of instances at which the departure rate and the arrival rate change, along with the time, and either the average headway or the rate itself, at each change point, plus any vehicles already queued at the start of the study.
+3. The program constructs piecewise linear cumulative arrival and departure curves from these rates, with the initial queue reflected as a starting offset in the arrival curve, solves for the time at which the two curves meet to determine when the queue dissipates, and evaluates the queue length at each rate change to find the maximum.
+4. The program computes total delay as the area between the arrival and departure curves, derives average delay per vehicle and average queue length from it, and plots both cumulative curves over the full study period.
 
-    a.	 The main content of this repository i.e. the programs which solve various kinds of problems is present in this sub-branch.
-  	
-    b.	Additionally, it consists of input files that can be used to run the programs (optional) in case the user does not have any input file to test these programs.
-  	
-    c.	Additionally, some of the programs have sample output files. Each of these files have the name of the program from which they have been made and what was the input file/ sample input on the output page of the python program, in the details of commit section.
-  	
-2.  Book_Notes: I have made this for my personal use. But in case someone wants to use them as short notes for books mentioned they are free to do so. I have made the programs by studying various problems from these books.
-
-3.	Collected-Research-Papers-from-Online: This also has been made for my personal use, and it contains some of the research papers I like reading. Someone who is interested can check it out.
