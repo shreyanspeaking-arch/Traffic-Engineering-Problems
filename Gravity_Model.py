@@ -23,5 +23,6 @@ d['Impedance of Travel']=d['Generalised Cost']**(-α)
 d=d.set_index('Zone')
 d['Attractions*Impedance']=d['Attractions']*d['Impedance of Travel']
 d['Trips from zone origin to destination']=(d.loc[o,'Productions']*d['Attractions*Impedance'])/np.sum(d['Attractions*Impedance'])
-d['Trips from zone origin to destination'].astype(int)
+d['Trips from zone origin to destination']=d['Trips from zone origin to destination'].astype('Int64')
+d=d.reset_index()
 d.to_excel("output.xlsx", index=False)
