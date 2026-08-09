@@ -1,12 +1,8 @@
-This repository has 3 sub-branches as of 28th July 2026. 
-1.	Python-Programs-for-Various-Problems:
+Traffic_Safety_Analysis_at_a_4_signal_intersection.py:
 
-    a.	 The main content of this repository i.e. the programs which solve various kinds of problems is present in this sub-branch.
-  	
-    b.	Additionally, it consists of input files that can be used to run the programs (optional) in case the user does not have any input file to test these programs.
-  	
-    c.	Additionally, some of the programs have sample output files. Each of these files have the name of the program from which they have been made and what was the input file/ sample input on the output page of the python program, in the details of commit section.
-  	
-2.  Book_Notes: I have made this for my personal use. But in case someone wants to use them as short notes for books mentioned they are free to do so. I have made the programs by studying various problems from these books.
-
-3.	Collected-Research-Papers-from-Online: This also has been made for my personal use, and it contains some of the research papers I like reading. Someone who is interested can check it out.
+1. This program predicts the annual number of crashes at a four leg signalized intersection, using safety performance functions and crash modification factors consistent with the Highway Safety Manual predictive method.
+2. The program reads Table_12_4_Calibration_Coefficients.csv and Table_12_5_Calibration_Coefficients.csv, giving calibration coefficients for multi-vehicle and single-vehicle base crash frequency models respectively, split into total, injury and fatal, and property damage only categories. Using the major and minor street traffic volumes, the program computes base crash frequencies for each crash type and splits them proportionally into injury and fatal, and property damage only components.
+3. The program reads Table_12_6_Calibration_Coefficients.csv, giving calibration coefficients for a base pedestrian crash frequency model, and Table_12_7_Pedestrian_Volume_Default_Values.csv, giving default pedestrian volumes for general levels of pedestrian activity when an actual count is not available. Using the pedestrian volume and the maximum number of lanes a pedestrian must cross, the program computes a base pedestrian crash frequency.
+4. The program reads Table_12_9_CMF_Turn_Lanes.csv, giving crash modification factors for the number of approaches with exclusive left or right turn lanes, and Table_12_10_CMF_Left_Turn_Phasing.csv, giving crash modification factors for the type and extent of left turn signal phasing. The user also enters the number of approaches prohibiting right turn on red, and either the number or proportion of multi-vehicle crashes that are right angle or rear end collisions, from which the program derives further crash modification factors for right turn on red restrictions and red light cameras.
+5. The program reads Table_12_11_Formatted.csv, giving crash modification factors based on the presence of nearby schools, bus stops, and alcohol selling stores, and applies these to the base pedestrian crash frequency.
+6. The program combines the adjusted vehicle, pedestrian, and bicycle crash predictions, applies a user supplied local calibration factor, and reports the total predicted number of crashes per year at the intersection.
