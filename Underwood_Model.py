@@ -10,24 +10,17 @@ V=input('Enter the expression of volume in terms of K in the format a*exp(-(<K>/
 V=sp.sympify(V)
 Kj=float(input('Enter the maximum traffic density you can think of on this road in veh/km. This estimate how long the speed-density graph will plot'))
 Vf=V.subs(K,0)
-l1=np.linspace(0,Kj,1000).tolist()
+l1=np.linspace(0,Kj,100000).tolist()
 l2=[]
-for i in range(1000):
-    l2+=[V.subs(K,float(l1[i]))]
+Vo=Vf/m.exp(1)
+Ko=sp.solve(V-Vo,K)[0]
+print('Capacity of road is ',(Ko*Vo),'veh/h.')
 V2=V
 V=sp.symbols('V')
-Q=Kj*V*sp.ln(Vf/V)
-dQs=sp.diff(Q,V)
-Vo=sp.solve(dQs,V)
-for i in Vo:
-    Vo=i
-sV=sp.solve(V2-Vo,K)
-
-for i in sV:
-    Ko=i
-print('Capacity of road is ',(Ko*Vo),'veh/h.')
+Q=Ko*V*sp.log(Vf/V)
 l3=[]
-for i in range(1000):
+for i in range(100000):
+    l2+=[V2.subs(K,float(l1[i]))]
     l3+=[Q.subs(V,float(l2[i]))] 
 fig,ax=plt.subplots(2,1,figsize=(9,9))
 fig.suptitle("Underwood Model", fontsize=16)
