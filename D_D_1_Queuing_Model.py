@@ -57,7 +57,7 @@ lfd=[]
 lfa=[]
 for i in range(max([an,dn])):
     if i==0:
-        fd=vni+(dl[i]*(T-t[i]))
+        fd=(dl[i]*(T-t[i]))
         fa=vni+(al[i]*(T-t[i]))
         lfd+=[fd]
         lfa+=[fa]
