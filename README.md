@@ -13,3 +13,7 @@ Deterministic_Queuing_Analysis.py:
 4. The program reports the queue clearance time, exports the interval by interval results to an Excel file, and plots the size of the queue over time from the start of the study through to its dissipation.
 
 There are 3 sample inputs/outputs of this program which are:
+1. scenario_1_same_day_veh_h_ln.csv → output6.xlsx + Size of Queue vs End Time 1.png
+2. scenario_2_multiday_arr_veh_h.csv → output7.xlsx + Size of Queue vs End Time 2.png
+3. scenario_3_sameday_both_veh_h.csv → output8.xlsx + Size of Queue vs End Time 3.png
+
