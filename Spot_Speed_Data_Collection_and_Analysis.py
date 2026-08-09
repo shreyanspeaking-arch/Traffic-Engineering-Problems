@@ -197,7 +197,7 @@ while co5.upper()!='NO':
     sp=0
     for i in l3new:
         if spline2(i)<=pctlespeed*(1+(e/100)) and spline2(i)>=pctlespeed*(1-(e/100)):
-            sp+=spline2(i)
+            sp+=i
             co6+=1
     if co6>0:
         print('The ',pctlespeed,' percentile speed is ',sp/co6,uspeed)
