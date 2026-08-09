@@ -6,3 +6,5 @@ Traffic_Safety_Analysis_at_a_4_signal_intersection.py:
 4. The program reads Table_12_9_CMF_Turn_Lanes.csv, giving crash modification factors for the number of approaches with exclusive left or right turn lanes, and Table_12_10_CMF_Left_Turn_Phasing.csv, giving crash modification factors for the type and extent of left turn signal phasing. The user also enters the number of approaches prohibiting right turn on red, and either the number or proportion of multi-vehicle crashes that are right angle or rear end collisions, from which the program derives further crash modification factors for right turn on red restrictions and red light cameras.
 5. The program reads Table_12_11_Formatted.csv, giving crash modification factors based on the presence of nearby schools, bus stops, and alcohol selling stores, and applies these to the base pedestrian crash frequency.
 6. The program combines the adjusted vehicle, pedestrian, and bicycle crash predictions, applies a user supplied local calibration factor, and reports the total predicted number of crashes per year at the intersection.
+
+Sample_Input_Output.md contains the contents of a sample output page of this program.
