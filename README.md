@@ -1,12 +1,5 @@
-This repository has 3 sub-branches as of 28th July 2026. 
-1.	Python-Programs-for-Various-Problems:
-
-    a.	 The main content of this repository i.e. the programs which solve various kinds of problems is present in this sub-branch.
-  	
-    b.	Additionally, it consists of input files that can be used to run the programs (optional) in case the user does not have any input file to test these programs.
-  	
-    c.	Additionally, some of the programs have sample output files. Each of these files have the name of the program from which they have been made and what was the input file/ sample input on the output page of the python program, in the details of commit section.
-  	
-2.  Book_Notes: I have made this for my personal use. But in case someone wants to use them as short notes for books mentioned they are free to do so. I have made the programs by studying various problems from these books.
-
-3.	Collected-Research-Papers-from-Online: This also has been made for my personal use, and it contains some of the research papers I like reading. Someone who is interested can check it out.
+Space_and_Time_Mean_Speed.py:
+1. This program contains two functions, space_mean_speed and time_mean_speed, meant to be imported and used within other traffic analysis programs.
+2. The space_mean_speed function asks for the length of a road segment and the time taken by each vehicle to travel across it, then works out the average speed as the total distance divided by the average travel time.
+3. The time_mean_speed function asks for the speed of each vehicle as it passes a fixed point, then works out the simple average of these speeds.
+4. Each function takes a verbose argument, which when entered as True prints the result to the screen, and when entered as False returns the result instead for further use.
