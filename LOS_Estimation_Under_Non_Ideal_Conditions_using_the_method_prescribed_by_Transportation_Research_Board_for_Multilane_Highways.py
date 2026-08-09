@@ -48,9 +48,9 @@ for i in range(len(l3)):
 t4=pd.read_csv('Table_5_4_PCE_Heavy_Vehicles.csv')
 t4=t4.set_index('Correction_factor')
 t4=t4.rename(index={'ET for trucks':'Truck', 'EB for buses':'Bus', 'ER for recreational vehicles':'Recreational Vehicle'})
-terrain=input('Enter type of terrain, either <Level>, <Rolling> or <Mountaineous>')
+terrain=input('Enter type of terrain, either <Level>, <Rolling> or <Mountainous>')
 terrain=terrain.capitalize()
-if terrain not in ['Level','Rolling','Mountaineous']:
+if terrain not in ['Level','Rolling','Mountainous']:
     print('Invalid Input')
     sys.exit()
 ET=float(t4.loc['Truck',terrain])
@@ -73,7 +73,7 @@ if dvrtype=='YES':
     fp=1
 elif dvrtype=='NO':
     fp=float(input('Enter the correction factor between 0.75 and 0.9'))
-    if fp>=0.9 or fp<=0.75:
+    if fp>0.9 or fp<0.75:
         print('Invalid Input')
         sys.exit()
 else:
