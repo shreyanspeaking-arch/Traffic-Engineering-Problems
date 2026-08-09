@@ -32,3 +32,9 @@ Predicting_Change_in_Modal_Split_due_to_a_new_contribution.py:
 3. The program computes each mode's probability share and estimated ridership before the change, using the logit formula.
 4. The user then enters the modes remaining after the change, along with updated cost and travel time for each surviving mode, and provides a name and utility function for any newly added mode, or removes any discontinued mode by name. Only one newly added mode is currently supported per run, since the program does not yet accumulate more than one new mode's name and utility function when multiple modes are added at once.
 5. The program recomputes probability shares and ridership after the change, and reports the increase or decrease in the number of commuters using each mode common to both periods.
+
+Use_of_Multinomial_Logit_Model_for_the_Estimation_of_Modal_Split.py:
+1. This program estimates the modal split between an origin and destination using a multinomial logit model based on user defined utility functions of cost and travel time for each mode of transport.
+2. The user enters the number of commuters, the number of available modes, and for each mode, a name and a utility function expressed in terms of cost and travel time.
+3. The user then enters the actual cost and travel time for each mode, and the program evaluates each mode's utility and converts it into a probability share using the logit formula, normalized across all modes.
+4. The program reports the probability of commuters choosing each mode and the corresponding estimated number of commuters using that mode between the given origin and destination.
