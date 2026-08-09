@@ -6,4 +6,5 @@ Calibration_and_graph_of_Daily_and_Monthly_Variation_Factors.py:
 4. The program plots the variation of the daily and monthly adjustment factors, and exports the calibrated daily and monthly factor tables to separate Excel files.
 
 Sample Input/Output:
+
 vehicle_volume_2026_Disclaimer_This_Document_is_AI_generated_Not_from_a_genuine_Source.csv → Daily_Variation_Factors_Data_Output.xlsx + Graphs of Daily and Monthly Variation Factors.png + Monthly_Variation_Factors_Data_Output.xlsx
