@@ -6,3 +6,10 @@ D_D_1_Queuing_Model.py:
 
 A sample graph created by this program of No. of Vehicles vs Time has been shown in the file Cumulative_No_of_vehicles_stuck_in_a_queue_vs_Time_Graph_for_D_D_1_Queuing_Analysis.png. Check the commit history for the sample input.
 
+Deterministic_Queuing_Analysis.py:
+1. This program analyzes deterministic queue buildup and dissipation over a series of time intervals with varying arrival and departure rates, either entered manually or read from a CSV or Excel file.
+2. For each interval, the user provides the arrival and departure rates, either as totals or per lane, along with the number of lanes if applicable, and the program computes the number of vehicles arriving and departing, and the resulting queue size at the end of each interval.
+3. If the queue is found to clear before the final recorded interval, the program truncates the analysis at that point. Otherwise, assuming constant rates continue beyond the last recorded interval, the program extrapolates forward to estimate the exact time the queue fully dissipates.
+4. The program reports the queue clearance time, exports the interval by interval results to an Excel file, and plots the size of the queue over time from the start of the study through to its dissipation.
+
+There are 3 sample inputs/outputs of this program which are:
