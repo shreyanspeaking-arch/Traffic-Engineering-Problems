@@ -22,3 +22,9 @@ M_D_1_Queuing_Model.py:
 2. The user enters the average departure rate, either directly or via the average headway between vehicles, and the average arrival rate.
 3. The program computes the utilization ratio as the arrival rate divided by the departure rate, and uses standard M/D/1 queuing formulas to determine the average number of vehicles in queue and the average waiting time per vehicle in queue.
 4. The program reports the average queue length and the average waiting time, along with the average total time a vehicle spends in the system, combining waiting time and service time.
+
+M_M_1_Queuing_Model.py:
+1. This program analyzes an M/M/1 queue, using Kendall's notation where the first M denotes random, Poisson distributed arrivals, the second M denotes random, exponentially distributed service times, and 1 denotes a single server or service channel.
+2. The user enters the average departure rate and average arrival rate, either directly, via average headway, or by providing aggregated counts of departures or arrivals over one or more timed intervals.
+3. The program computes the utilization ratio as the arrival rate divided by the departure rate, and uses standard M/M/1 queuing formulas to determine the average number of vehicles in queue, the average waiting time per vehicle in queue, and the average total time a vehicle spends in the system.
+4. The user can additionally query the steady state probability of finding any specific number of vehicles in the queuing system, repeated for as many values as desired.
