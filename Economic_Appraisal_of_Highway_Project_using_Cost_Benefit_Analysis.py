@@ -8,11 +8,11 @@ t1=int(input('Enter no of years taken for initial construction of highway before
 t2=t-t1
 acr1=float(input('Enter accident rate on existing road per million vehicle km'))
 acr2=float(input('Enter accident rate on upgraded road per million vehicle km'))
-aac=int(input('Enter average accident cost'))
-avts=int(input('Enter average vehicle time savings per hour'))
+aac=float(input('Enter average accident cost'))
+avts=floatinput('Enter average vehicle time savings per hour'))
 avs1=float(input('Average vehicle speed on existing road in km/h'))
 avs2=float(input('Average vehicle speed on upgraded road in km/h'))
-dis=int(input('Enter discount rate in %'))
+dis=float(input('Enter discount rate in %'))
 V=sp.symbols('V')
 print('''Enter the function for Average Vehicle Operating Costs as single variable function of Average Vehicle speeds V. 
 Don''t include LHS and = like f(x)= and the output unit should be in cost/km''')
@@ -25,12 +25,12 @@ for i in range(t):
     k[0]=i+1
     if i+1<=t1:
         print('Enter annual construction cost for year',i+1)
-        k[2]=int(input())
+        k[2]=float(input())
     else:
         print('Enter predicted flow per million vehicle kms for year',i+1)
-        k[1]=int(input())
+        k[1]=float(input())
         print('Enter the annual operating cost for year',i+1)
-        k[3]=int(input())
+        k[3]=float(input())
     l[i]=k
 d=pd.DataFrame(l,columns=['Year','Predicted flow per million vehicle km','Construction Cost','Operating Cost'])
 d=d.set_index('Year')
