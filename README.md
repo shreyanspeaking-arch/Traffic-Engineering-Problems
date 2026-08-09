@@ -2,8 +2,8 @@ This repository has 12 sub-branches as of 8th August 2026.
 
 Original-Branch-Disorganized:
 
-    1. This sub branch has the original copies of all the programs, their sample input, their sample output and 
-    other files (mainly .csv files) required for their functioning. 
+    1. This sub branch has the original copies of all the programs, their sample input, their 
+    sample output and other files (mainly .csv files) required for their functioning. 
     2. This is a clutter which has all the programs in this repository in once place. 
     3. The other sub-branches are segregations of these programs based on their type and purpose. 
     4. The commit history of some files in the other sub  branches has not been updated properly. 
