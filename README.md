@@ -17,3 +17,8 @@ There are 3 sample inputs/outputs of this program which are:
 2. scenario_2_multiday_arr_veh_h.csv → output7.xlsx + Size of Queue vs End Time 2.png
 3. scenario_3_sameday_both_veh_h.csv → output8.xlsx + Size of Queue vs End Time 3.png
 
+M_D_1_Queuing_Model.py:
+1. This program analyzes an M/D/1 queue, using Kendall's notation where M denotes random, Poisson distributed arrivals, D denotes deterministic, fixed service or departure times, and 1 denotes a single server or service channel.
+2. The user enters the average departure rate, either directly or via the average headway between vehicles, and the average arrival rate.
+3. The program computes the utilization ratio as the arrival rate divided by the departure rate, and uses standard M/D/1 queuing formulas to determine the average number of vehicles in queue and the average waiting time per vehicle in queue.
+4. The program reports the average queue length and the average waiting time, along with the average total time a vehicle spends in the system, combining waiting time and service time.
