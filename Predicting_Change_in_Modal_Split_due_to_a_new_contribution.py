@@ -65,7 +65,7 @@ if n2>n:
         else:
             print('Enter the ',i+1,' th kind of transport')
             tt=input()
-    print('''Enter the Utility function for ',tt,' in the form of C, which is cost and T, which is travel time, only the expression. 
+    print(f'''Enter the Utility function for ,{tt}, in the form of C, which is cost and T, which is travel time, only the expression. 
              Don' t include f(x)= or U=. Make sure to use * for multiplication. Don't write something like 4C-3T. It should be 4*C-3*T''')
     f=input()
     lf+=[sp.sympify(f)]
