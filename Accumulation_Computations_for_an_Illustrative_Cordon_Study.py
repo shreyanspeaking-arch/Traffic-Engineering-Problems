@@ -26,10 +26,11 @@ if statement==1:
     if 'No. of vehicles leaving' not in list(d.columns):
         m=input('Enter the column name containin the no. of vehicles leaving the cordon of each dataset')
         d=d.rename(columns={m:'No. of vehicles leaving'})
-    d['Accumulation']=[np.nan for i in range(len(d))]
+    n=int(input('''If there are any number of vehicles accumulated in
+the beginning enter it else enter 0'''))
+    d['Accumulation']=[n]+[np.nan for i in range(len(d)-1)]
     d['Start Time']=pd.to_datetime(d['Start Time']).dt.time
     d['End Time']=pd.to_datetime(d['End Time']).dt.time
-    d=d.set_index(['Start Time','End Time'])
 elif statement==2:
     l=[]
     st=pd.to_datetime(input('Enter the start time in H:M when the beginning accumulation value is available'))
@@ -83,21 +84,19 @@ elif statement==2:
     d=pd.DataFrame(l,columns=['Start Time','End Time','No. of vehicles entering','No. of vehicles leaving','Accumulation'])
     d['Start Time']=pd.to_datetime(d['Start Time']).dt.time
     d['End Time']=pd.to_datetime(d['End Time']).dt.time
-    d=d.set_index(['Start Time','End Time'])
 else:
     print('Invalid Input')
     sys.exit()
-d.loc[list(d.index)[0],'Accumulation']=0
 for i in range(1,len(d)):
     d.loc[list(d.index)[i],'Accumulation']=d.loc[list(d.index)[i-1],'Accumulation']+d.loc[list(d.index)[i],'No. of vehicles entering']-d.loc[list(d.index)[i],'No. of vehicles leaving']
-d=d[['No. of vehicles entering','No. of vehicles leaving','Accumulation']].astype('Int64')
-print(d)
-d=d.reset_index()
-l1=d['End Time'].tolist()
+for i in range(len(d)):
+    if d.loc[list(d.index)[i],'Accumulation']<0:
+        d.loc[list(d.index)[i],'Accumulation']=0
+l1=list(d['End Time'])
 for i in range(len(l1)):
     l1[i]=str(l1[i])
-l2=d['Accumulation'].tolist()
-fig,ax=plt.subplots(figsize=(10,8))
+l2=list(d['Accumulation'])
+fig,ax=plt.subplots(figsize=(12,10))
 ax.plot(l1,l2,color='blue')
 ax.grid(True,alpha=0.7,linestyle='--')
 ax.set_title('Presentation of Accumulation Data w.r.t. Time')
@@ -105,3 +104,5 @@ ax.set_ylabel('Accumulated Vehicles→')
 ax.set_xlabel('Time→')
 plt.tight_layout()
 plt.show()
+f=input('Enter output filename. Exclude .xlsx')
+d.to_excel(f+'.xlsx',index=False)
