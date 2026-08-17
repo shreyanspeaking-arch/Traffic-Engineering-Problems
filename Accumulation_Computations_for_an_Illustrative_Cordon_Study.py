@@ -87,6 +87,7 @@ elif statement==2:
 else:
     print('Invalid Input')
     sys.exit()
+d.loc[list(d.index)[0],'Accumulation']=0
 for i in range(1,len(d)):
     d.loc[list(d.index)[i],'Accumulation']=d.loc[list(d.index)[i-1],'Accumulation']+d.loc[list(d.index)[i],'No. of vehicles entering']-d.loc[list(d.index)[i],'No. of vehicles leaving']
 d=d[['No. of vehicles entering','No. of vehicles leaving','Accumulation']].astype('Int64')
