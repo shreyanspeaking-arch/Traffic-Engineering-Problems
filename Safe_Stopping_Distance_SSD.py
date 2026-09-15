@@ -28,7 +28,7 @@ while co2.upper()!='NO':
         elif u=='mph':
             vb=float(vb)*1.60934
         co3=input('''If grade of A is the same as grade of B press anything/enter
-    else enter <No>''')
+else enter <No>''')
         print('If the highway is perfectly horizontal enter the grade as 0')
         Ga=input('Enter the slope of the highway for vehicle A. If it is in degrees just enter the <Angle><o> and if in % grade enter <Grade><%>')
         if Ga.strip()[-1]=='o':
@@ -50,7 +50,7 @@ while co2.upper()!='NO':
         Ga/=100
         Gb/=100
         co4=input('''If coefficient of friction of A is the same as the coefficient of friction of B press anything/enter
-    else enter <No>''')
+else enter <No>''')
         fa=float(input('Enter the coefficient of friction between the wheels of vehicle A and the pavement surface.'))
         if co4.upper()!='NO':
             fb=fa
