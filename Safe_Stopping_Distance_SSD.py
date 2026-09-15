@@ -10,9 +10,12 @@ Vehicle A is to the left and Vehicle B is to the right if I view the road from t
 If the vehicles are moving in the same direction they are moving from left to right''')
 co2=''
 l=[]
+l1=[]
+l2=[]
 while co2.upper()!='NO':
     try:
         print('Case ',i)
+        l1+=['Case '+str(i)]
         t=float(input('Enter total reaction + maneuver time in seconds'))
         va=float(input('Enter the speed of vehicle A in '+u))
         vb=float(input('Enter the speed of vehicle B in '+u))
@@ -58,12 +61,12 @@ while co2.upper()!='NO':
         hsd=float(input('Enter head start distance between A and B (in m). If unknown enter 0.'))
         if Ga!=0:
             oa=int(input('''Enter 1 if vehicle A is moving uphill
-    Enter 2 if vehicle is moving downhill'''))
+Enter 2 if vehicle is moving downhill'''))
             if oa==2:
                 Ga*=-1
         if Gb!=0:
             ob=int(input('''Enter 1 if vehicle B is moving uphill
-    Enter 2 if vehicle is moving downhill'''))
+Enter 2 if vehicle is moving downhill'''))
             if ob==2:
                 Gb*=-1
         if va==0 or vb==0:
@@ -82,6 +85,7 @@ while co2.upper()!='NO':
         SSDa=(va*t)+((va**2)/(2*9.81*(fa+Ga)))
         SSDb=(vb*t)+((vb**2)/(2*9.81*(fb+Gb)))
         SSD=max(0,SSDa+(c*SSDb)-hsd)
+        l2+=[SSD]
         rs=input('Add any statement for this dataset if you want to else press enter')
         l+=[[va*(18/5),vb*(18/5),o.upper(),fa,fb,t,hsd,Ga*100,Gb*100,SSD,rs]]
         i+=1
@@ -93,3 +97,12 @@ df=pd.DataFrame(l,columns=['Velocity of Vehicle A','Velocity of Vehicle B','Dire
 print(df)
 f=input('Enter the output filename for this table. Exclude .xlsx')
 df.to_excel(f+'.xlsx',index=False)
+fig,ax=plt.subplots(figsize=(10,8))
+ax.plot(l1,l2,color='blue')
+ax.grid(True)
+ax.set_title('Comparison of Safe Stopping Distance for various cases')
+ax.set_ylabel('Safe Stopping Distance (SSD) (in m)→')
+ax.set_xlabel('Case No.→')
+ax.set_xticklabels(l1, rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
