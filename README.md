@@ -7,4 +7,12 @@ Traffic_Safety_Analysis_at_a_4_signal_intersection.py:
 5. The program reads Table_12_11_Formatted.csv, giving crash modification factors based on the presence of nearby schools, bus stops, and alcohol selling stores, and applies these to the base pedestrian crash frequency.
 6. The program combines the adjusted vehicle, pedestrian, and bicycle crash predictions, applies a user supplied local calibration factor, and reports the total predicted number of crashes per year at the intersection.
 
-Sample_Input_Output.md contains the contents of a sample output page of this program.
+  Sample_Input_Output.md contains the contents of a sample output page of this program.
+
+Safe_Stopping_Distance_SSD.py:
+
+1. This program computes and compares the Safe Stopping Distance (SSD) between two model vehicles, A and B, across multiple user-defined cases, accounting for reaction time, road grade, coefficient of friction, and relative direction of movement.
+2. The user enters the unit of speed (kmph or mph), and for each case, the total reaction plus maneuver time, the speeds of both vehicles, the grade of the highway for each (entered either in degrees or as a percentage, with uphill or downhill direction specified), the coefficient of friction between each vehicle's wheels and the pavement surface, and any head start distance between the two vehicles.
+3. The program determines whether the vehicles are moving in the same or opposite directions, either from user input or inferred from their uphill/downhill orientation, and applies the corresponding sign convention when combining their individual stopping distances.
+4. The individual stopping distance for each vehicle is computed as the sum of the distance travelled during reaction time and the braking distance derived from its speed, friction coefficient, and grade. These are combined according to the direction of travel and reduced by the head start distance to obtain the Safe Stopping Distance for that case.
+5. The user can repeat this for multiple cases within a single session, optionally adding a descriptive statement for each. All case parameters and results are tabulated and exported to an Excel file, and the variation of Safe Stopping Distance across cases is plotted.
