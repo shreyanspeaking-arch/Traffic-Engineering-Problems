@@ -1,4 +1,4 @@
-[Traffic_Safety_Analysis_at_a_4_signal_intersection.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Safety-Analysis/Traffic_Safety_Analysis_at_a_4_signal_intersection.py):
+## [Traffic_Safety_Analysis_at_a_4_signal_intersection.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Safety-Analysis/Traffic_Safety_Analysis_at_a_4_signal_intersection.py)
 
 1. This program predicts the annual number of crashes at a four leg signalized intersection, using safety performance functions and crash modification factors consistent with the Highway Safety Manual predictive method.
 2. The program reads Table_12_4_Calibration_Coefficients.csv and Table_12_5_Calibration_Coefficients.csv, giving calibration coefficients for multi-vehicle and single-vehicle base crash frequency models respectively, split into total, injury and fatal, and property damage only categories. Using the major and minor street traffic volumes, the program computes base crash frequencies for each crash type and splits them proportionally into injury and fatal, and property damage only components.
@@ -8,7 +8,7 @@
 6. The program combines the adjusted vehicle, pedestrian, and bicycle crash predictions, applies a user supplied local calibration factor, and reports the total predicted number of crashes per year at the intersection.
 7. Sample_Input_Output.md contains the contents of a sample output page of this program.
 
-[Safe_Stopping_Distance_SSD.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Safety-Analysis/Safe_Stopping_Distance_SSD.py):
+## [Safe_Stopping_Distance_SSD.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Safety-Analysis/Safe_Stopping_Distance_SSD.py)
 
 1. This program computes and compares the Safe Stopping Distance (SSD) between two model vehicles, A and B, across multiple user-defined cases, accounting for reaction time, road grade, coefficient of friction, and relative direction of movement.
 2. The user enters the unit of speed (kmph or mph), and for each case, the total reaction plus maneuver time, the speeds of both vehicles, the grade of the highway for each (entered either in degrees or as a percentage, with uphill or downhill direction specified), the coefficient of friction between each vehicle's wheels and the pavement surface, and any head start distance between the two vehicles.
