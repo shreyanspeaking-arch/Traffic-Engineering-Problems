@@ -1,4 +1,4 @@
-[Parabolic_Curves_Computation_For_Vertical_Alignment_on_Highways.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Curve-Fitting-for-Highways/Parabolic_Curves_Computation_For_Vertical_Alignment_on_Highways.py):
+## [Parabolic_Curves_Computation_For_Vertical_Alignment_on_Highways.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Curve-Fitting-for-Highways/Parabolic_Curves_Computation_For_Vertical_Alignment_on_Highways.py)
 
 1. This program computes key parameters of a parabolic vertical curve used in highway alignment design, given the coordinates and grades at the two tangent points.
 2. The user enters the coordinates of tangent points T1 and T2, along with the signed grade in percent at each point.
@@ -10,7 +10,7 @@
    e. The horizontal and vertical offsets at the highest or lowest point on the curve.
 4. The user can repeat this selection for multiple computations in the same session before exiting. All computations use standard parabolic vertical curve formulas, with distances measured in meters.
 
-[Super_Elevation_Estimation_for_Highway_Curve.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Curve-Fitting-for-Highways/Super_Elevation_Estimation_for_Highway_Curve.py):
+## [Super_Elevation_Estimation_for_Highway_Curve.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Curve-Fitting-for-Highways/Super_Elevation_Estimation_for_Highway_Curve.py)
 
 1. This program estimates the required superelevation and checks the safety of a highway curve, based on the model prescribed by IRC:73-2023.
 2. The user enters the design speed and radius of curvature, along with the desired superelevation, either the common default value of 0.07 or a custom value, which is checked against a practical upper limit.
