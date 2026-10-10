@@ -12,9 +12,9 @@ Trip distribution is the step of travel demand forecasting that decides **where*
 
 ## 📂 Programs in this branch
 
-| # | Program | What it does |
-|:-:|---|---|
-| 1 | [**Gravity Model**](#1-gravity-model) | Trips from one origin to every other zone |
+| Program | What it does |
+|---|---|
+| [**Gravity Model**](#gravity-model) | Trips from one origin to every other zone |
 
 ## ⚙️ Getting started
 
@@ -29,7 +29,7 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 ---
 
-## 1. Gravity Model
+## Gravity Model
 
 📄 **File:** [`Gravity_Model.py`](./Gravity_Model.py)
 
