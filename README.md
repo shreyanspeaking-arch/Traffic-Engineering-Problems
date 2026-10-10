@@ -12,9 +12,9 @@ Is a highway project worth building? These programs weigh the money a project co
 
 ## 📂 Programs in this branch
 
-| # | Program | What it does |
-|:-:|---|---|
-| 1 | [**Cost Benefit Analysis of a Highway Project**](#1-cost-benefit-analysis-of-a-highway-project) | NPV from accident, operating cost and travel time savings |
+| Program | What it does |
+|---|---|
+| [**Cost Benefit Analysis of a Highway Project**](#cost-benefit-analysis-of-a-highway-project) | NPV from accident, operating cost and travel time savings |
 
 ## ⚙️ Getting started
 
@@ -29,7 +29,7 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 ---
 
-## 1. Cost Benefit Analysis of a Highway Project
+## Cost Benefit Analysis of a Highway Project
 
 📄 **File:** [`Economic_Appraisal_of_Highway_Project_using_Cost_Benefit_Analysis.py`](./Economic_Appraisal_of_Highway_Project_using_Cost_Benefit_Analysis.py)
 
