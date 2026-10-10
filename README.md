@@ -1,46 +1,5 @@
-This repository has 12 sub-branches (excluding main) as of 8th August 2026.
-
-- ## [Cordon-Count-Study](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Cordon-Count-Study)
-  - [Accumulation_Computations_for_an_Illustrative_Cordon_Study.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Cordon-Count-Study/Accumulation_Computations_for_an_Illustrative_Cordon_Study.py)
-- ## [Curve-Fitting-for-Highways](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Curve-Fitting-for-Highways)
-  - [Parabolic_Curves_Computation_For_Vertical_Alignment_on_Highways.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Curve-Fitting-for-Highways/Parabolic_Curves_Computation_For_Vertical_Alignment_on_Highways.py)
-  - [Super_Elevation_Estimation_for_Highway_Curve.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Curve-Fitting-for-Highways/Super_Elevation_Estimation_for_Highway_Curve.py)
-- ## [Highway-Economics](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Highway-Economics)
-  - [Economic_Appraisal_of_Highway_Project_using_Cost_Benefit_Analysis.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Highway-Economics/Economic_Appraisal_of_Highway_Project_using_Cost_Benefit_Analysis.py)
-- ## [LOS-Estimation-of-Multilane-Highways](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/LOS-Estimation-of-Multilane-Highways)
-  - [LOS_Estimation_Under_Ideal_Conditions_using_the_method_prescribed_by_Transportation_Research_Board_for_Multilane_Highways.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/LOS-Estimation-of-Multilane-Highways/LOS_Estimation_Under_Ideal_Conditions_using_the_method_prescribed_by_Transportation_Research_Board_for_Multilane_Highways.py)
-  - [LOS_Estimation_Under_Non_Ideal_Conditions_using_the_method_prescribed_by_Transportation_Research_Board_for_Multilane_Highways.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/LOS-Estimation-of-Multilane-Highways/LOS_Estimation_Under_Non_Ideal_Conditions_using_the_method_prescribed_by_Transportation_Research_Board_for_Multilane_Highways.py)
-- ## [Modal-Split-Analysis](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Modal-Split-Analysis)
-  - [Gravity_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Gravity_Model.py)
-  - [Greenberg_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Greenberg_Model.py)
-  - [Greenshields_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Greenshields_Model.py)
-  - [Modal_Split_based_on_Travel_expenses_and_Time_in_and_out_of_vehicle.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Modal_Split_based_on_Travel_expenses_and_Time_in_and_out_of_vehicle.py)
-  - [Predicting_Change_in_Modal_Split_due_to_a_new_contribution.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Predicting_Change_in_Modal_Split_due_to_a_new_contribution.py)
-  - [Underwood_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Underwood_Model.py)
-  - [Use_of_Multinomial_Logit_Model_for_the_Estimation_of_Modal_Split.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Use_of_Multinomial_Logit_Model_for_the_Estimation_of_Modal_Split.py)
-- ## [Network-Study-Plans](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Network-Study-Plans)
-  - [Multiday_Network_Study_Plan.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Network-Study-Plans/Multiday_Network_Study_Plan.py)
-  - [Multiple_Slots_in_Multiple_Days_Network_Study_Plan.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Network-Study-Plans/Multiple_Slots_in_Multiple_Days_Network_Study_Plan.py)
-  - [One_Day_Network_Study_Plan.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Network-Study-Plans/One_Day_Network_Study_Plan.py)
-  - [Specialized_Intersection_Counting_Studies_Using_Origin_and_Destination_Data.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Network-Study-Plans/Specialized_Intersection_Counting_Studies_Using_Origin_and_Destination_Data.py)
-- ## [Queuing-Analysis](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Queuing-Analysis)
-  - [D_D_1_Queuing_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Queuing-Analysis/D_D_1_Queuing_Model.py)
-  - [Deterministic_Queuing_Analysis.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Queuing-Analysis/Deterministic_Queuing_Analysis.py)
-  - [M_D_1_Queuing_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Queuing-Analysis/M_D_1_Queuing_Model.py)
-  - [M_M_1_Queuing_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Queuing-Analysis/M_M_1_Queuing_Model.py)
-  - [M_M_N_Queuing_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Queuing-Analysis/M_M_N_Queuing_Model.py)
-- ## [Speed-Studies](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Speed-Studies)
-  - [Space_and_Time_Mean_Speed.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Speed-Studies/Space_and_Time_Mean_Speed.py)
-  - [Spot_Speed_Data_Collection_and_Analysis.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Speed-Studies/Spot_Speed_Data_Collection_and_Analysis.py)
-- ## [Traffic-Flow-Parameters](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Traffic-Flow-Parameters)
-  - [Calibration_and_graph_of_Daily_and_Monthly_Variation_Factors.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Flow-Parameters/Calibration_and_graph_of_Daily_and_Monthly_Variation_Factors.py)
-- ## [Traffic-Safety-Analysis](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Traffic-Safety-Analysis)
-  - [Safe_Stopping_Distance_SSD.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Safety-Analysis/Safe_Stopping_Distance_SSD.py)
-  - [Traffic_Safety_Analysis_at_a_4_signal_intersection.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Safety-Analysis/Traffic_Safety_Analysis_at_a_4_signal_intersection.py)
-- ## [Traffic-Volume-Studies](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Traffic-Volume-Studies)
-  - [Illustration_of_Daily_Volume_Parameters.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Volume-Studies/Illustration_of_Daily_Volume_Parameters.py)
-- ## [Original-Branch-Disorganized](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Original-Branch-Disorganized)
-  - This sub branch has the original copies of all the programs, their sample input, their sample output and other files (mainly .csv files) required for their functioning.
-  - This is a clutter which has all the programs in this repository in once place.
-  - The other sub-branches are segregations of these programs based on their type and purpose.
-  - The commit history of some files in the other sub  branches has not been updated properly. To check their commit history visit the file with the same name in this branch because all files in the other repositories have been uploaded first in this one then copy pasted in the other sections based on their utilities.
+## [Gravity_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Trip-Distribution/Gravity_Model.py)
+1. This program estimates the distribution of trips from a single origin zone to all other zones in a network, using a singly constrained gravity model with a power function cost deterrence factor, based on generalised travel cost expressed in time.
+2. The user enters the number of zones, the origin zone, and a modal deterrence parameter (alpha) governing the sensitivity of trips to travel cost.
+3. For every zone other than the origin, the user enters the generalised cost of travel from the origin to that zone, along with the productions and attractions for each zone.
+4. The program computes each zone's travel impedance as its generalised cost raised to the power of negative alpha, and distributes the origin zone's productions to all other zones in proportion to their attractions weighted by this impedance, relative to the total weighted attractiveness of all zones. Results are exported to an Excel file.
