@@ -1,25 +1,3 @@
-## [Gravity_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Gravity_Model.py)
-1. This program estimates the distribution of trips from a single origin zone to all other zones in a network, using a singly constrained gravity model with a power function cost deterrence factor, based on generalised travel cost expressed in time.
-2. The user enters the number of zones, the origin zone, and a modal deterrence parameter (alpha) governing the sensitivity of trips to travel cost.
-3. For every zone other than the origin, the user enters the generalised cost of travel from the origin to that zone, along with the productions and attractions for each zone.
-4. The program computes each zone's travel impedance as its generalised cost raised to the power of negative alpha, and distributes the origin zone's productions to all other zones in proportion to their attractions weighted by this impedance, relative to the total weighted attractiveness of all zones. Results are exported to an Excel file.
-
-## [Greenberg_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Greenberg_Model.py)
-1. This program models a highway traffic stream using the Greenberg speed density model, computing capacity and plotting the corresponding speed density and speed volume relationships.
-2. The user enters the model's speed as a function of density, in the form of a natural logarithm expression involving traffic density K.
-3. The program solves this expression for the jam density, and evaluates the model at the density corresponding to maximum flow to obtain the optimum speed.
-4. The program computes and reports the roadway's capacity as the product of the optimum density and optimum speed, and plots speed against density and speed against volume over the full range of densities from just above zero up to jam density.
-
-For sample output containing the graphs it can generate, check Speed-Density and Speed-Volume Relationships Using Greenberg Model.png
-
-## [Greenshields_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Greenshields_Model.py)
-1. This program models a highway traffic stream using the Greenshields speed density model, computing capacity and plotting the corresponding speed density and speed volume relationships.
-2. The user enters the model's speed as a linear function of density, in the form of a straight line expression involving traffic density K.
-3. The program solves this expression for the free flow speed and the jam density, then derives the flow density relationship and finds the optimum speed at which flow is maximised.
-4. The program computes and reports the roadway's capacity as the product of the optimum density and optimum speed, and plots speed against density and speed against volume over the full range of densities from zero up to jam density.
-
-For sample output containing the graphs it can generate, check Speed-Density and Speed-Volume Relationships Using Greenshield' s Model.png
-
 ## [Modal_Split_based_on_Travel_expenses_and_Time_in_and_out_of_vehicle.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Modal_Split_based_on_Travel_expenses_and_Time_in_and_out_of_vehicle.py)
 1. This program estimates the modal split among competing modes of transport using a multinomial logit model based on user defined utility functions of in vehicle time, out of vehicle time, and travel expenses.
 2. For each mode, the user enters a utility function with numeric coefficients for in vehicle time, out of vehicle time, and travel cost, along with the actual time and cost components that make up each variable.
@@ -38,11 +16,3 @@ For sample output containing the graphs it can generate, check Speed-Density and
 2. The user enters the number of commuters, the number of available modes, and for each mode, a name and a utility function expressed in terms of cost and travel time.
 3. The user then enters the actual cost and travel time for each mode, and the program evaluates each mode's utility and converts it into a probability share using the logit formula, normalized across all modes.
 4. The program reports the probability of commuters choosing each mode and the corresponding estimated number of commuters using that mode between the given origin and destination.
-
-## [Underwood_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Underwood_Model.py)
-1. This program models a highway traffic stream using the Underwood exponential speed density model, computing capacity and plotting the corresponding speed density and speed volume relationships.
-2. The user enters the model's speed as an exponential function of density, in the form of an exponential decay expression involving traffic density K, along with a maximum density value used only to set the plotting range, since this model has no finite jam density.
-3. The program evaluates the free flow speed from this expression, computes the optimum speed at which flow is maximised, then solves the expression for the corresponding optimum density.
-4. The program computes and reports the roadway's capacity as the product of the optimum density and optimum speed, and plots speed against density and speed against volume over the chosen range of densities.
-
-For sample output containing the graphs it can generate, check Speed-Density and Speed-Volume Relationships Using Underwood's Model.png
