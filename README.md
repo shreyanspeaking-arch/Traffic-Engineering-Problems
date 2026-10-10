@@ -1,4 +1,4 @@
-This repository has 12 sub-branches (excluding main) as of 8th August 2026.
+This repository has 13 sub-branches (excluding main) as of 10th October 2026.
 
 - ## [Cordon-Count-Study](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Cordon-Count-Study)
   - [Accumulation_Computations_for_an_Illustrative_Cordon_Study.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Cordon-Count-Study/Accumulation_Computations_for_an_Illustrative_Cordon_Study.py)
@@ -11,12 +11,8 @@ This repository has 12 sub-branches (excluding main) as of 8th August 2026.
   - [LOS_Estimation_Under_Ideal_Conditions_using_the_method_prescribed_by_Transportation_Research_Board_for_Multilane_Highways.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/LOS-Estimation-of-Multilane-Highways/LOS_Estimation_Under_Ideal_Conditions_using_the_method_prescribed_by_Transportation_Research_Board_for_Multilane_Highways.py)
   - [LOS_Estimation_Under_Non_Ideal_Conditions_using_the_method_prescribed_by_Transportation_Research_Board_for_Multilane_Highways.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/LOS-Estimation-of-Multilane-Highways/LOS_Estimation_Under_Non_Ideal_Conditions_using_the_method_prescribed_by_Transportation_Research_Board_for_Multilane_Highways.py)
 - ## [Modal-Split-Analysis](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Modal-Split-Analysis)
-  - [Gravity_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Gravity_Model.py)
-  - [Greenberg_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Greenberg_Model.py)
-  - [Greenshields_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Greenshields_Model.py)
   - [Modal_Split_based_on_Travel_expenses_and_Time_in_and_out_of_vehicle.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Modal_Split_based_on_Travel_expenses_and_Time_in_and_out_of_vehicle.py)
   - [Predicting_Change_in_Modal_Split_due_to_a_new_contribution.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Predicting_Change_in_Modal_Split_due_to_a_new_contribution.py)
-  - [Underwood_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Underwood_Model.py)
   - [Use_of_Multinomial_Logit_Model_for_the_Estimation_of_Modal_Split.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Modal-Split-Analysis/Use_of_Multinomial_Logit_Model_for_the_Estimation_of_Modal_Split.py)
 - ## [Network-Study-Plans](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Network-Study-Plans)
   - [Multiday_Network_Study_Plan.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Network-Study-Plans/Multiday_Network_Study_Plan.py)
@@ -34,11 +30,16 @@ This repository has 12 sub-branches (excluding main) as of 8th August 2026.
   - [Spot_Speed_Data_Collection_and_Analysis.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Speed-Studies/Spot_Speed_Data_Collection_and_Analysis.py)
 - ## [Traffic-Flow-Parameters](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Traffic-Flow-Parameters)
   - [Calibration_and_graph_of_Daily_and_Monthly_Variation_Factors.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Flow-Parameters/Calibration_and_graph_of_Daily_and_Monthly_Variation_Factors.py)
+  - [Greenberg_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Flow-Parameters/Greenberg_Model.py)
+  - [Greenshields_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Flow-Parameters/Greenshields_Model.py)
+  - [Underwood_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Flow-Parameters/Underwood_Model.py)
 - ## [Traffic-Safety-Analysis](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Traffic-Safety-Analysis)
   - [Safe_Stopping_Distance_SSD.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Safety-Analysis/Safe_Stopping_Distance_SSD.py)
   - [Traffic_Safety_Analysis_at_a_4_signal_intersection.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Safety-Analysis/Traffic_Safety_Analysis_at_a_4_signal_intersection.py)
 - ## [Traffic-Volume-Studies](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Traffic-Volume-Studies)
   - [Illustration_of_Daily_Volume_Parameters.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Volume-Studies/Illustration_of_Daily_Volume_Parameters.py)
+- ## [Trip-Distribution](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Trip-Distribution)
+  - [Gravity_Model.py](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Trip-Distribution/Gravity_Model.py)
 - ## [Original-Branch-Disorganized](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Original-Branch-Disorganized)
   - This sub branch has the original copies of all the programs, their sample input, their sample output and other files (mainly .csv files) required for their functioning.
   - This is a clutter which has all the programs in this repository in once place.
