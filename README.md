@@ -12,9 +12,9 @@ A cordon count draws an imaginary boundary around an area, such as a city centre
 
 ## 📂 Programs in this branch
 
-| # | Program | What it does |
-|:-:|---|---|
-| 1 | [**Vehicle Accumulation in a Cordon Area**](#1-vehicle-accumulation-in-a-cordon-area) | Accumulation of vehicles inside a cordon over time, with a plot |
+| Program | What it does |
+|---|---|
+| [**Vehicle Accumulation in a Cordon Area**](#vehicle-accumulation-in-a-cordon-area) | Accumulation of vehicles inside a cordon over time, with a plot |
 
 ## ⚙️ Getting started
 
@@ -29,7 +29,7 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 ---
 
-## 1. Vehicle Accumulation in a Cordon Area
+## Vehicle Accumulation in a Cordon Area
 
 📄 **File:** [`Accumulation_Computations_for_an_Illustrative_Cordon_Study.py`](./Accumulation_Computations_for_an_Illustrative_Cordon_Study.py)
 
