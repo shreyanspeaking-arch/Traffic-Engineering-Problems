@@ -12,9 +12,9 @@ Volume studies count how many vehicles use a road, and summarise the counts into
 
 ## 📂 Programs in this branch
 
-| # | Program | What it does |
-|:-:|---|---|
-| 1 | [**Daily Volume Parameters**](#1-daily-volume-parameters) | Monthly ADT and AWDT, annual AADT, with plots |
+| Program | What it does |
+|---|---|
+| [**Daily Volume Parameters**](#daily-volume-parameters) | Monthly ADT and AWDT, annual AADT, with plots |
 
 ## ⚙️ Getting started
 
@@ -29,7 +29,7 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 ---
 
-## 1. Daily Volume Parameters
+## Daily Volume Parameters
 
 📄 **File:** [`Illustration_of_Daily_Volume_Parameters.py`](./Illustration_of_Daily_Volume_Parameters.py)
 
