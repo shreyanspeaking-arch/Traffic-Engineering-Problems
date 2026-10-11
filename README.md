@@ -36,7 +36,7 @@ This repository has 13 sub-branches (excluding main) as of 10th October 2026.
 
 ### 🚧 [Cordon Count Study](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Cordon-Count-Study)
 
-- [**Vehicle Accumulation in a Cordon Area**](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Cordon-Count-Study/Accumulation_Computations_for_an_Illustrative_Cordon_Study.py): Accumulation of vehicles inside a cordon over time, with a plot
+[**Vehicle Accumulation in a Cordon Area**](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Cordon-Count-Study/Accumulation_Computations_for_an_Illustrative_Cordon_Study.py): Accumulation of vehicles inside a cordon over time, with a plot
 
 ### 🛣️ [Curve Fitting for Highways](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Curve-Fitting-for-Highways)
 
@@ -45,7 +45,7 @@ This repository has 13 sub-branches (excluding main) as of 10th October 2026.
 
 ### 💰 [Highway Economics](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Highway-Economics)
 
-- [**Cost Benefit Analysis of a Highway Project**](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Highway-Economics/Economic_Appraisal_of_Highway_Project_using_Cost_Benefit_Analysis.py): NPV from accident, operating cost and travel time savings
+[**Cost Benefit Analysis of a Highway Project**](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Highway-Economics/Economic_Appraisal_of_Highway_Project_using_Cost_Benefit_Analysis.py): NPV from accident, operating cost and travel time savings
 
 ### 📊 [LOS Estimation of Multilane Highways](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/LOS-Estimation-of-Multilane-Highways)
 
@@ -92,11 +92,11 @@ This repository has 13 sub-branches (excluding main) as of 10th October 2026.
 
 ### 📈 [Traffic Volume Studies](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Traffic-Volume-Studies)
 
-- [**Daily Volume Parameters**](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Volume-Studies/Illustration_of_Daily_Volume_Parameters.py): Monthly ADT and AWDT, annual AADT, with plots
+[**Daily Volume Parameters**](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Volume-Studies/Illustration_of_Daily_Volume_Parameters.py): Monthly ADT and AWDT, annual AADT, with plots
 
 ### 🔀 [Trip Distribution](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Trip-Distribution)
 
-- [**Gravity Model**](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Trip-Distribution/Gravity_Model.py): Trips from one origin to every other zone
+[**Gravity Model**](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Trip-Distribution/Gravity_Model.py): Trips from one origin to every other zone
 
 ## ⚙️ Getting started
 
