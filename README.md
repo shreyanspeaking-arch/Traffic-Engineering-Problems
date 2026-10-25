@@ -50,6 +50,40 @@ Calibrates daily and monthly traffic variation factors from a dataset of daily v
 |---|---|
 | [`vehicle_volume_2026_Disclaimer_This_Document_is_AI_generated_Not_from_a_genuine_Source.csv`](./vehicle_volume_2026_Disclaimer_This_Document_is_AI_generated_Not_from_a_genuine_Source.csv) | [`Daily_Variation_Factors_Data_Output.xlsx`](./Daily_Variation_Factors_Data_Output.xlsx)<br>[`Monthly_Variation_Factors_Data_Output.xlsx`](./Monthly_Variation_Factors_Data_Output.xlsx)<br>[`Graphs of Daily and Monthly Variation Factors.png`](./Graphs%20of%20Daily%20and%20Monthly%20Variation%20Factors.png) |
 
+<!-- preview:start -->
+**📋 First five rows**
+
+<details open>
+<summary><code>Daily_Variation_Factors_Data_Output.xlsx</code></summary>
+
+| Yearly Average Volume for this day (veh/day) | Daily Adjustment Factor DF |
+|---|---|
+| 2902 | 1.059 |
+| 3113 | 0.988 |
+| 2946 | 1.044 |
+| 3246 | 0.947 |
+| 3222 | 0.954 |
+
+<sub>7 rows in total.</sub>
+
+</details>
+
+<details open>
+<summary><code>Monthly_Variation_Factors_Data_Output.xlsx</code></summary>
+
+| Total Traffic(vehs) | ADT for Month(veh/day) | Monthly Adjustment Factor MF |
+|---|---|---|
+| 94786 | 3057 | 1.006 |
+| 85529 | 3054 | 1.007 |
+| 98223 | 3168 | 0.971 |
+| 98001 | 3266 | 0.942 |
+| 88437 | 2852 | 1.078 |
+
+<sub>12 rows in total.</sub>
+
+</details>
+<!-- preview:end -->
+
 **📊 Sample graph**
 
 <p align="center">
