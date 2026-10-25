@@ -106,7 +106,7 @@ Computes and compares the Safe Stopping Distance (SSD) between two model vehicle
 **📊 Sample graph**
 
 <p align="center">
-  <img src="./Various_Stopping_Sight_Distance_Conditions.png" alt="Various_Stopping_Sight_Distance_Conditions" width="720">
+  <img src="./Various_Stopping_Sight_Distance_Conditions.png" alt="Various_Stopping_Sight_Distance_Conditions" width="720"><br><sub>Various_Stopping_Sight_Distance_Conditions.png</sub>
 </p>
 
 ---
