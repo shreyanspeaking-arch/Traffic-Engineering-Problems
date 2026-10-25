@@ -69,15 +69,15 @@ Computes and visualizes monthly and annual traffic volume parameters from a data
 **📊 Sample graphs**
 
 <p align="center">
-  <img src="./Daily%20Variation%20of%20Vehicle%20Volumes.png" alt="Daily Variation of Vehicle Volumes" width="720">
+  <img src="./Daily%20Variation%20of%20Vehicle%20Volumes.png" alt="Daily Variation of Vehicle Volumes" width="720"><br><sub>Daily Variation of Vehicle Volumes.png</sub>
 </p>
 
 <p align="center">
-  <img src="./Variation%20of%20Total%20Monthly%20and%20Total%20Weekday%20Volume%20per%20Month.png" alt="Variation of Total Monthly and Total Weekday Volume per Month" width="720">
+  <img src="./Variation%20of%20Total%20Monthly%20and%20Total%20Weekday%20Volume%20per%20Month.png" alt="Variation of Total Monthly and Total Weekday Volume per Month" width="720"><br><sub>Variation of Total Monthly and Total Weekday Volume per Month.png</sub>
 </p>
 
 <p align="center">
-  <img src="./Variation%20of%20Average%20Daily%20Traffic%20on%20all%20days%2C%20weekdays%20and%20weekends%20based%20on%20months.png" alt="Variation of Average Daily Traffic on all days, weekdays and weekends based on months" width="720">
+  <img src="./Variation%20of%20Average%20Daily%20Traffic%20on%20all%20days%2C%20weekdays%20and%20weekends%20based%20on%20months.png" alt="Variation of Average Daily Traffic on all days, weekdays and weekends based on months" width="720"><br><sub>Variation of Average Daily Traffic on all days, weekdays and weekends based on months.png</sub>
 </p>
 
 ---
