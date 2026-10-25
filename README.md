@@ -54,7 +54,7 @@ Analyzes a deterministic D/D/1 queue at a single service point. It computes queu
 **📊 Sample graph**
 
 <p align="center">
-  <img src="./Cumulative_No_of_vehicles_stuck_in_a_queue_vs_Time_Graph_for_D_D_1_Queuing_Analysis.png" alt="Cumulative_No_of_vehicles_stuck_in_a_queue_vs_Time_Graph_for_D_D_1_Queuing_Analysis" width="720">
+  <img src="./Cumulative_No_of_vehicles_stuck_in_a_queue_vs_Time_Graph_for_D_D_1_Queuing_Analysis.png" alt="Cumulative_No_of_vehicles_stuck_in_a_queue_vs_Time_Graph_for_D_D_1_Queuing_Analysis" width="720"><br><sub>Cumulative_No_of_vehicles_stuck_in_a_queue_vs_Time_Graph_for_D_D_1_Queuing_Analysis.png</sub>
 </p>
 
 ---
@@ -128,15 +128,15 @@ Analyzes deterministic queue buildup and dissipation over a series of time inter
 **📊 Sample graphs**
 
 <p align="center">
-  <img src="./Size%20of%20Queue%20vs%20End%20Time%201.png" alt="Size of Queue vs End Time 1" width="720">
+  <img src="./Size%20of%20Queue%20vs%20End%20Time%201.png" alt="Size of Queue vs End Time 1" width="720"><br><sub>Size of Queue vs End Time 1.png</sub>
 </p>
 
 <p align="center">
-  <img src="./Size%20of%20Queue%20vs%20End%20Time%202.png" alt="Size of Queue vs End Time 2" width="720">
+  <img src="./Size%20of%20Queue%20vs%20End%20Time%202.png" alt="Size of Queue vs End Time 2" width="720"><br><sub>Size of Queue vs End Time 2.png</sub>
 </p>
 
 <p align="center">
-  <img src="./Size%20of%20Queue%20vs%20End%20Time%203.png" alt="Size of Queue vs End Time 3" width="720">
+  <img src="./Size%20of%20Queue%20vs%20End%20Time%203.png" alt="Size of Queue vs End Time 3" width="720"><br><sub>Size of Queue vs End Time 3.png</sub>
 </p>
 
 ---
