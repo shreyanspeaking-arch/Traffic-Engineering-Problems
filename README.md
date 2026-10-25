@@ -84,6 +84,25 @@ Computes and compares the Safe Stopping Distance (SSD) between two model vehicle
 |---|---|
 | Manual input (see the commit history of the output files) | [`Various_Stopping_Sight_Distance_Conditions.xlsx`](./Various_Stopping_Sight_Distance_Conditions.xlsx)<br>[`Various_Stopping_Sight_Distance_Conditions.png`](./Various_Stopping_Sight_Distance_Conditions.png) |
 
+<!-- preview:start -->
+**📋 First five rows**
+
+<details open>
+<summary><code>Various_Stopping_Sight_Distance_Conditions.xlsx</code></summary>
+
+| Velocity of Vehicle A | Velocity of Vehicle B | Direction of movement wrt each other | Coefficient of Friction between Vehicle A and Pavement Surface | Coefficient of Friction between Vehicle B and Pavement Surface | Total Reaction + Maneuver Time | Head Start Distance | Grade of Slope of road of Vehicle A | Grade of Slope of road of Vehicle B | Safe Stopping Distance | Related Statement |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 120 | 60 | SAME | 0.5 | 0.5 | 2 | 0 | 0 | 0 | 118.281 |  |
+| 120 | 60 | OPPOSITE | 0.5 | 0.5 | 2 | 0 | 0 | 0 | 241.579 |  |
+| 60 | 0 | OPPOSITE | 0.5 | 0.5 | 2 | 0 | 0 | 0 | 61.649 |  |
+| 120 | 60 | SAME | 0.5 | 0.5 | 2.5 | 0 | 0 | 0 | 126.614 |  |
+| 120 | 60 | OPPOSITE | 0.5 | 0.5 | 2.5 | 0 | 0 | 0 | 266.579 |  |
+
+<sub>18 rows in total.</sub>
+
+</details>
+<!-- preview:end -->
+
 **📊 Sample graph**
 
 <p align="center">
