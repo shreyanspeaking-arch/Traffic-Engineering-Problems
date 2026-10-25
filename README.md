@@ -48,6 +48,40 @@ Computes and plots the accumulation of vehicles within a cordon area over time, 
 | [`accumulation_computations_24hr.csv`](./accumulation_computations_24hr.csv) | [`output9.xlsx`](./output9.xlsx)<br>[`Accumulation_of_Vehicles_wrt_time_1.png`](./Accumulation_of_Vehicles_wrt_time_1.png) |
 | [`traffic_simulation_24h.csv`](./traffic_simulation_24h.csv) | [`output10.xlsx`](./output10.xlsx)<br>[`Accumulation_of_Vehicles_wrt_time_2.png`](./Accumulation_of_Vehicles_wrt_time_2.png) |
 
+<!-- preview:start -->
+**📋 First five rows**
+
+<details open>
+<summary><code>output9.xlsx</code></summary>
+
+| Start Time | End Time | No. of vehicles entering | No. of vehicles leaving | Accumulation |
+|---|---|---|---|---|
+| 04:00:00 | 05:00:00 |  |  | 250 |
+| 05:00:00 | 06:00:00 | 100 | 20 | 330 |
+| 06:00:00 | 07:00:00 | 150 | 40 | 440 |
+| 07:00:00 | 08:00:00 | 200 | 40 | 600 |
+| 08:00:00 | 09:00:00 | 290 | 80 | 810 |
+
+<sub>13 rows in total.</sub>
+
+</details>
+
+<details open>
+<summary><code>output10.xlsx</code></summary>
+
+| Start Time | End Time | No. of vehicles entering | No. of vehicles leaving | Accumulation |
+|---|---|---|---|---|
+| 00:00:00 | 01:00:00 | 68 | 41 | 0 |
+| 01:00:00 | 02:00:00 | 48 | 34 | 14 |
+| 02:00:00 | 03:00:00 | 24 | 26 | 12 |
+| 03:00:00 | 04:00:00 | 7 | 17 | 2 |
+| 04:00:00 | 05:00:00 | 30 | 15 | 17 |
+
+<sub>24 rows in total.</sub>
+
+</details>
+<!-- preview:end -->
+
 **📊 Sample graphs**
 
 <p align="center">
