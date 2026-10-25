@@ -53,9 +53,9 @@ Analyzes a deterministic D/D/1 queue at a single service point. It computes queu
 
 **📊 Sample graph**
 
-<p align="center">
+<table align="center"><tr><td align="center">
   <img src="./Cumulative_No_of_vehicles_stuck_in_a_queue_vs_Time_Graph_for_D_D_1_Queuing_Analysis.png" alt="Cumulative arrivals and departures over time for the D/D/1 queue" width="720"><br><sub><b>Figure 1.</b> Cumulative arrivals and departures over time for the D/D/1 queue<br><a href="./Cumulative_No_of_vehicles_stuck_in_a_queue_vs_Time_Graph_for_D_D_1_Queuing_Analysis.png">Cumulative_No_of_vehicles_stuck_in_a_queue_vs_Time_Graph_for_D_D_1_Queuing_Analysis.png</a></sub>
-</p>
+</td></tr></table>
 
 ---
 
@@ -127,17 +127,17 @@ Analyzes deterministic queue buildup and dissipation over a series of time inter
 
 **📊 Sample graphs**
 
-<p align="center">
+<table align="center"><tr><td align="center">
   <img src="./Size%20of%20Queue%20vs%20End%20Time%201.png" alt="Size of the queue at the end of each time interval" width="720"><br><sub><b>Figure 2.</b> Size of the queue at the end of each time interval<br><a href="./Size%20of%20Queue%20vs%20End%20Time%201.png">Size of Queue vs End Time 1.png</a> · from <a href="./scenario_1_same_day_veh_h_ln.csv">scenario_1_same_day_veh_h_ln.csv</a></sub>
-</p>
+</td></tr></table>
 
-<p align="center">
+<table align="center"><tr><td align="center">
   <img src="./Size%20of%20Queue%20vs%20End%20Time%202.png" alt="Size of the queue at the end of each time interval" width="720"><br><sub><b>Figure 3.</b> Size of the queue at the end of each time interval<br><a href="./Size%20of%20Queue%20vs%20End%20Time%202.png">Size of Queue vs End Time 2.png</a> · from <a href="./scenario_2_multiday_arr_veh_h.csv">scenario_2_multiday_arr_veh_h.csv</a></sub>
-</p>
+</td></tr></table>
 
-<p align="center">
+<table align="center"><tr><td align="center">
   <img src="./Size%20of%20Queue%20vs%20End%20Time%203.png" alt="Size of the queue at the end of each time interval" width="720"><br><sub><b>Figure 4.</b> Size of the queue at the end of each time interval<br><a href="./Size%20of%20Queue%20vs%20End%20Time%203.png">Size of Queue vs End Time 3.png</a> · from <a href="./scenario_3_sameday_both_veh_h.csv">scenario_3_sameday_both_veh_h.csv</a></sub>
-</p>
+</td></tr></table>
 
 ---
 
