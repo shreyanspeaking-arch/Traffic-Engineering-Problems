@@ -79,6 +79,52 @@ Analyzes deterministic queue buildup and dissipation over a series of time inter
 | [`scenario_2_multiday_arr_veh_h.csv`](./scenario_2_multiday_arr_veh_h.csv) | [`output7.xlsx`](./output7.xlsx)<br>[`Size of Queue vs End Time 2.png`](./Size%20of%20Queue%20vs%20End%20Time%202.png) |
 | [`scenario_3_sameday_both_veh_h.csv`](./scenario_3_sameday_both_veh_h.csv) | [`output8.xlsx`](./output8.xlsx)<br>[`Size of Queue vs End Time 3.png`](./Size%20of%20Queue%20vs%20End%20Time%203.png) |
 
+<!-- preview:start -->
+**📋 First five rows**
+
+<details open>
+<summary><code>output6.xlsx</code></summary>
+
+| Start Time | End Time | Arrival Rate (in veh/h/ln) | No. of lanes used for arrival | Departure Rate (in veh/h/ln) | No. of lanes used for departure | Arrivals (veh) | Departures (veh) | Size of Queue (veh) |
+|---|---|---|---|---|---|---|---|---|
+| 08:00:00 | 09:00:00 | 2000 | 2 | 1800 | 2 | 4000 | 3600 | 400 |
+| 09:00:00 | 10:00:00 | 2500 | 2 | 1800 | 2 | 5000 | 3600 | 1800 |
+| 10:00:00 | 11:00:00 | 3000 | 2 | 1800 | 2 | 6000 | 3600 | 4200 |
+| 11:00:00 |  | 1500 | 2 | 1800 | 2 | 3000 | 3600 |  |
+
+<sub>4 rows in total.</sub>
+
+</details>
+
+<details open>
+<summary><code>output7.xlsx</code></summary>
+
+| Start Time | End Time | Arrival Rate (in veh/h) | Departure Rate (in veh/h/ln) | No. of lanes used for departure | No. of lanes used for arrival | Arrivals (veh) | Departures (veh) | Size of Queue (veh) |
+|---|---|---|---|---|---|---|---|---|
+| 14:00:00 | 16:00:00 | 8000 | 1800 | 2 |  | 16000 | 7200 | 8800 |
+| 16:00:00 | 18:00:00 | 9500 | 1800 | 2 |  | 19000 | 7200 | 20600 |
+| 18:00:00 | 20:00:00 | 11000 | 1800 | 2 |  | 22000 | 7200 | 35400 |
+| 20:00:00 |  | 5000 | 1800 | 2 |  | 5000 | 3600 |  |
+
+<sub>4 rows in total.</sub>
+
+</details>
+
+<details open>
+<summary><code>output8.xlsx</code></summary>
+
+| Start Time | End Time | Arrival Rate (in veh/h) | Departure Rate (in veh/h) | No. of lanes used for arrival | No. of lanes used for departure | Arrivals (veh) | Departures (veh) | Size of Queue (veh) |
+|---|---|---|---|---|---|---|---|---|
+| 07:30:00 | 08:30:00 | 5000 | 4000 |  |  | 5000 | 4000 | 1000 |
+| 08:30:00 | 09:30:00 | 6500 | 4000 |  |  | 6500 | 4000 | 3500 |
+| 09:30:00 | 10:30:00 | 7200 | 4000 |  |  | 7200 | 4000 | 6700 |
+| 10:30:00 |  | 3000 | 4000 |  |  | 3000 | 4000 |  |
+
+<sub>4 rows in total.</sub>
+
+</details>
+<!-- preview:end -->
+
 **📊 Sample graphs**
 
 <p align="center">
