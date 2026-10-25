@@ -85,11 +85,11 @@ Computes and plots the accumulation of vehicles within a cordon area over time, 
 **📊 Sample graphs**
 
 <p align="center">
-  <img src="./Accumulation_of_Vehicles_wrt_time_1.png" alt="Accumulation_of_Vehicles_wrt_time_1" width="720">
+  <img src="./Accumulation_of_Vehicles_wrt_time_1.png" alt="Accumulation_of_Vehicles_wrt_time_1" width="720"><br><sub>Accumulation_of_Vehicles_wrt_time_1.png</sub>
 </p>
 
 <p align="center">
-  <img src="./Accumulation_of_Vehicles_wrt_time_2.png" alt="Accumulation_of_Vehicles_wrt_time_2" width="720">
+  <img src="./Accumulation_of_Vehicles_wrt_time_2.png" alt="Accumulation_of_Vehicles_wrt_time_2" width="720"><br><sub>Accumulation_of_Vehicles_wrt_time_2.png</sub>
 </p>
 
 ---
