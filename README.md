@@ -87,7 +87,7 @@ Calibrates daily and monthly traffic variation factors from a dataset of daily v
 **📊 Sample graph**
 
 <p align="center">
-  <img src="./Graphs%20of%20Daily%20and%20Monthly%20Variation%20Factors.png" alt="Graphs of Daily and Monthly Variation Factors" width="720"><br><sub>Graphs of Daily and Monthly Variation Factors.png</sub>
+  <img src="./Graphs%20of%20Daily%20and%20Monthly%20Variation%20Factors.png" alt="Daily and monthly traffic variation factors" width="720"><br><sub><b>Figure 1.</b> Daily and monthly traffic variation factors<br><a href="./Graphs%20of%20Daily%20and%20Monthly%20Variation%20Factors.png">Graphs of Daily and Monthly Variation Factors.png</a> · from <a href="./vehicle_volume_2026_Disclaimer_This_Document_is_AI_generated_Not_from_a_genuine_Source.csv">vehicle_volume_2026_Disclaimer_This_Document_is_AI_generated_Not_from_a_genuine_Source.csv</a></sub>
 </p>
 
 ---
@@ -107,7 +107,7 @@ Models a highway traffic stream using the Greenshields speed density model, comp
 **📊 Sample graph**
 
 <p align="center">
-  <img src="./Speed-Density%20and%20Speed-Volume%20Relationships%20Using%20Greenshield%27%20s%20Model.png" alt="Speed-Density and Speed-Volume Relationships Using Greenshield' s Model" width="720"><br><sub>Speed-Density and Speed-Volume Relationships Using Greenshield' s Model.png</sub>
+  <img src="./Speed-Density%20and%20Speed-Volume%20Relationships%20Using%20Greenshield%27%20s%20Model.png" alt="Speed-density and speed-volume relationships, Greenshields&#x27; model" width="720"><br><sub><b>Figure 2.</b> Speed-density and speed-volume relationships, Greenshields' model<br><a href="./Speed-Density%20and%20Speed-Volume%20Relationships%20Using%20Greenshield%27%20s%20Model.png">Speed-Density and Speed-Volume Relationships Using Greenshield&#x27; s Model.png</a></sub>
 </p>
 
 ---
@@ -127,7 +127,7 @@ Models a highway traffic stream using the Greenberg speed density model, computi
 **📊 Sample graph**
 
 <p align="center">
-  <img src="./Speed-Density%20and%20Speed-Volume%20Relationships%20using%20Greenberg%20Model.png" alt="Speed-Density and Speed-Volume Relationships using Greenberg Model" width="720"><br><sub>Speed-Density and Speed-Volume Relationships using Greenberg Model.png</sub>
+  <img src="./Speed-Density%20and%20Speed-Volume%20Relationships%20using%20Greenberg%20Model.png" alt="Speed-density and speed-volume relationships, Greenberg&#x27;s model" width="720"><br><sub><b>Figure 3.</b> Speed-density and speed-volume relationships, Greenberg's model<br><a href="./Speed-Density%20and%20Speed-Volume%20Relationships%20using%20Greenberg%20Model.png">Speed-Density and Speed-Volume Relationships using Greenberg Model.png</a></sub>
 </p>
 
 ---
@@ -147,7 +147,7 @@ Models a highway traffic stream using the Underwood exponential speed density mo
 **📊 Sample graph**
 
 <p align="center">
-  <img src="./Speed-Density%20and%20Speed-Volume%20Relationships%20using%20Underwood%20Model.png" alt="Speed-Density and Speed-Volume Relationships using Underwood Model" width="720"><br><sub>Speed-Density and Speed-Volume Relationships using Underwood Model.png</sub>
+  <img src="./Speed-Density%20and%20Speed-Volume%20Relationships%20using%20Underwood%20Model.png" alt="Speed-density and speed-volume relationships, Underwood&#x27;s model" width="720"><br><sub><b>Figure 4.</b> Speed-density and speed-volume relationships, Underwood's model<br><a href="./Speed-Density%20and%20Speed-Volume%20Relationships%20using%20Underwood%20Model.png">Speed-Density and Speed-Volume Relationships using Underwood Model.png</a></sub>
 </p>
 
 ---
