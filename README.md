@@ -102,15 +102,15 @@ Collects and statistically analyzes spot speed data for a stretch of road, allow
 **📊 Sample graphs**
 
 <p align="center">
-  <img src="./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_1.png" alt="%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_1" width="720">
+  <img src="./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_1.png" alt="%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_1" width="720"><br><sub>%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_1.png</sub>
 </p>
 
 <p align="center">
-  <img src="./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_2.png" alt="%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_2" width="720">
+  <img src="./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_2.png" alt="%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_2" width="720"><br><sub>%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_2.png</sub>
 </p>
 
 <p align="center">
-  <img src="./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_3.png" alt="%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_3" width="720">
+  <img src="./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_3.png" alt="%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_3" width="720"><br><sub>%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_3.png</sub>
 </p>
 
 ---
