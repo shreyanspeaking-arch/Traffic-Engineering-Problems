@@ -47,6 +47,25 @@ Performs an economic appraisal of a highway project using cost benefit analysis,
 |---|---|
 | Manual input (see the commit history of output1.xlsx in [Original-Branch-Disorganized](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Original-Branch-Disorganized)) | [`output1.xlsx`](./output1.xlsx) |
 
+<!-- preview:start -->
+**📋 First five rows**
+
+<details open>
+<summary><code>output1.xlsx</code></summary>
+
+| Predicted flow per million vehicle km | Construction Cost | Operating Cost | Accident Savings | Operating Cost Savings | Travel Time Savings | Total User Benefits | Discounted Benefits | Construction and Maintenance Cost | Discounted Costs |
+|---|---|---|---|---|---|---|---|---|---|
+|  | 15000000 |  |  |  |  |  |  | 15000000 | 14150943.396 |
+|  | 10000000 |  |  |  |  |  |  | 10000000 | 8899964.4 |
+| 250 |  | 500000 | 1500000 | 454963.235 | 6617647.059 | 8572610.294 | 7197728.909 | 500000 | 419809.642 |
+| 260 |  | 500000 | 1560000 | 473161.765 | 6882352.941 | 8915514.706 | 7061922.703 | 500000 | 396046.832 |
+| 270 |  | 500000 | 1620000 | 491360.294 | 7147058.824 | 9258419.118 | 6918429.353 | 500000 | 373629.086 |
+
+<sub>12 rows in total.</sub>
+
+</details>
+<!-- preview:end -->
+
 ---
 
 <div align="center"><sub>📚 <a href="https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems">Back to all topics</a></sub></div>
