@@ -50,6 +50,55 @@ Collects and statistically analyzes spot speed data for a stretch of road, allow
 | Manual input (see the commit history of the output files) | [`output3.xlsx`](./output3.xlsx)<br>[`%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_2.png`](./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_2.png) |
 | Manual input (see the commit history of the output files) | [`output4.xlsx`](./output4.xlsx)<br>[`%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_3.png`](./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_3.png) |
 
+<!-- preview:start -->
+**📋 First five rows**
+
+<details open>
+<summary><code>output2.xlsx</code></summary>
+
+| Lower Limit in mi/h | Upper Limit in mi/h | Observed Vehicles(n) | Middle Speed (S) in mi/h | % Frequency | Cumulative % Frequency | nS | nS² | z | Probability of occurence (z≤zd) | Theoretical Frequency f | Combined Group Observed Frequency (n) | Combined Group Theoretical Frequency (f) | Chi-Square Group χ² |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 61 | inf | 4 | 62 | 0.924 | 100 | 248 | 15376 | inf | 0.005 | 2.31 |  |  |  |
+| 59 | 61 | 0 | 60 | 0 | 99.076 | 0 | 0 | 2.553 | 0.006 | 2.703 |  |  |  |
+| 57 | 59 | 0 | 58 | 0 | 99.076 | 0 | 0 | 2.271 | 0.012 | 5.111 |  |  |  |
+| 55 | 57 | 8 | 56 | 1.848 | 99.076 | 448 | 25088 | 1.988 | 0.021 | 8.929 | 12 | 19.052 | 2.61 |
+| 53 | 55 | 28 | 54 | 6.467 | 97.229 | 1512 | 81648 | 1.706 | 0.033 | 14.411 | 28 | 14.411 | 12.815 |
+
+<sub>19 rows in total.</sub>
+
+</details>
+
+<details open>
+<summary><code>output3.xlsx</code></summary>
+
+| Lower Limit in mi/h | Upper Limit in mi/h | Middle Speed (S) in mi/h | Observed Vehicles(n) | % Frequency | Cumulative % Frequency | nS | nS² |
+|---|---|---|---|---|---|---|---|
+| 30 | 32 | 31 | 0 | 0 | 0 | 0 | 0 |
+| 32 | 34 | 33 | 5 | 1.359 | 1.359 | 165 | 5445 |
+| 34 | 36 | 35 | 5 | 1.359 | 2.717 | 175 | 6125 |
+| 36 | 38 | 37 | 7 | 1.902 | 4.62 | 259 | 9583 |
+| 38 | 40 | 39 | 13 | 3.533 | 8.152 | 507 | 19773 |
+
+<sub>19 rows in total.</sub>
+
+</details>
+
+<details open>
+<summary><code>output4.xlsx</code></summary>
+
+| Lower Limit in mi/h | Upper Limit in mi/h | Observed Vehicles(n) | Middle Speed (S) in mi/h | % Frequency | Cumulative % Frequency | nS | nS² | z | Probability of occurence (z≤zd) | Theoretical Frequency f | Combined Group Observed Frequency (n) | Combined Group Theoretical Frequency (f) | Chi-Square Group χ² |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 64 | inf | 2 | 65 | 0.543 | 100 | 130 | 8450 | inf | 0.005 | 1.758 |  |  |  |
+| 62 | 64 | 3 | 63 | 0.815 | 99.457 | 189 | 11907 | 2.591 | 0.007 | 2.585 |  |  |  |
+| 60 | 62 | 7 | 61 | 1.902 | 98.641 | 427 | 26047 | 2.264 | 0.015 | 5.394 | 12 | 9.737 | 0.526 |
+| 58 | 60 | 10 | 59 | 2.717 | 96.739 | 590 | 34810 | 1.936 | 0.027 | 10.119 | 10 | 10.119 | 0.001 |
+| 56 | 58 | 18 | 57 | 4.891 | 94.022 | 1026 | 58482 | 1.608 | 0.046 | 17.064 | 18 | 17.064 | 0.051 |
+
+<sub>17 rows in total.</sub>
+
+</details>
+<!-- preview:end -->
+
 **📊 Sample graphs**
 
 <p align="center">
