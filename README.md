@@ -69,15 +69,15 @@ Computes and visualizes monthly and annual traffic volume parameters from a data
 **📊 Sample graphs**
 
 <p align="center">
-  <img src="./Daily%20Variation%20of%20Vehicle%20Volumes.png" alt="Daily Variation of Vehicle Volumes" width="720"><br><sub>Daily Variation of Vehicle Volumes.png</sub>
+  <img src="./Daily%20Variation%20of%20Vehicle%20Volumes.png" alt="Daily vehicle volumes over the recorded period" width="720"><br><sub><b>Figure 1.</b> Daily vehicle volumes over the recorded period<br><a href="./Daily%20Variation%20of%20Vehicle%20Volumes.png">Daily Variation of Vehicle Volumes.png</a> · from <a href="./daily_traffic_2024_this_file_is_AI_generated.csv">daily_traffic_2024_this_file_is_AI_generated.csv</a></sub>
 </p>
 
 <p align="center">
-  <img src="./Variation%20of%20Total%20Monthly%20and%20Total%20Weekday%20Volume%20per%20Month.png" alt="Variation of Total Monthly and Total Weekday Volume per Month" width="720"><br><sub>Variation of Total Monthly and Total Weekday Volume per Month.png</sub>
+  <img src="./Variation%20of%20Total%20Monthly%20and%20Total%20Weekday%20Volume%20per%20Month.png" alt="Total monthly and total weekday volume in each month" width="720"><br><sub><b>Figure 2.</b> Total monthly and total weekday volume in each month<br><a href="./Variation%20of%20Total%20Monthly%20and%20Total%20Weekday%20Volume%20per%20Month.png">Variation of Total Monthly and Total Weekday Volume per Month.png</a> · from <a href="./daily_traffic_2024_this_file_is_AI_generated.csv">daily_traffic_2024_this_file_is_AI_generated.csv</a></sub>
 </p>
 
 <p align="center">
-  <img src="./Variation%20of%20Average%20Daily%20Traffic%20on%20all%20days%2C%20weekdays%20and%20weekends%20based%20on%20months.png" alt="Variation of Average Daily Traffic on all days, weekdays and weekends based on months" width="720"><br><sub>Variation of Average Daily Traffic on all days, weekdays and weekends based on months.png</sub>
+  <img src="./Variation%20of%20Average%20Daily%20Traffic%20on%20all%20days%2C%20weekdays%20and%20weekends%20based%20on%20months.png" alt="Average daily traffic on all days, weekdays and weekends, by month" width="720"><br><sub><b>Figure 3.</b> Average daily traffic on all days, weekdays and weekends, by month<br><a href="./Variation%20of%20Average%20Daily%20Traffic%20on%20all%20days%2C%20weekdays%20and%20weekends%20based%20on%20months.png">Variation of Average Daily Traffic on all days, weekdays and weekends based on months.png</a> · from <a href="./daily_traffic_2024_this_file_is_AI_generated.csv">daily_traffic_2024_this_file_is_AI_generated.csv</a></sub>
 </p>
 
 ---
