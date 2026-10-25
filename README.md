@@ -47,6 +47,25 @@ Computes and visualizes monthly and annual traffic volume parameters from a data
 |---|---|
 | [`daily_traffic_2024_this_file_is_AI_generated.csv`](./daily_traffic_2024_this_file_is_AI_generated.csv) | [`output5.xlsx`](./output5.xlsx)<br>[`Daily Variation of Vehicle Volumes.png`](./Daily%20Variation%20of%20Vehicle%20Volumes.png)<br>[`Variation of Total Monthly and Total Weekday Volume per Month.png`](./Variation%20of%20Total%20Monthly%20and%20Total%20Weekday%20Volume%20per%20Month.png)<br>[`Variation of Average Daily Traffic on all days, weekdays and weekends based on months.png`](./Variation%20of%20Average%20Daily%20Traffic%20on%20all%20days%2C%20weekdays%20and%20weekends%20based%20on%20months.png) |
 
+<!-- preview:start -->
+**📋 First five rows**
+
+<details open>
+<summary><code>output5.xlsx</code></summary>
+
+| No. of weekdays in month (days) | No. of days in month (days) | Total Monthly Volume (veh) | Total Weekday Volume (veh) | Average Weekday Traffic (AWT) | Average Daily Traffic (ADT) |
+|---|---|---|---|---|---|
+| 23 | 31 | 786727 | 641524 | 27892.348 | 25378.29 |
+| 21 | 29 | 798809 | 629525 | 29977.381 | 27545.138 |
+| 21 | 31 | 884928 | 666102 | 31719.143 | 28546.065 |
+| 22 | 30 | 874013 | 703394 | 31972.455 | 29133.767 |
+| 23 | 31 | 862343 | 696064 | 30263.652 | 27817.516 |
+
+<sub>12 rows in total.</sub>
+
+</details>
+<!-- preview:end -->
+
 **📊 Sample graphs**
 
 <p align="center">
