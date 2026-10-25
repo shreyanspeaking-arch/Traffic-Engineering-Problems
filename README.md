@@ -87,7 +87,7 @@ Calibrates daily and monthly traffic variation factors from a dataset of daily v
 **📊 Sample graph**
 
 <p align="center">
-  <img src="./Graphs%20of%20Daily%20and%20Monthly%20Variation%20Factors.png" alt="Graphs of Daily and Monthly Variation Factors" width="720">
+  <img src="./Graphs%20of%20Daily%20and%20Monthly%20Variation%20Factors.png" alt="Graphs of Daily and Monthly Variation Factors" width="720"><br><sub>Graphs of Daily and Monthly Variation Factors.png</sub>
 </p>
 
 ---
@@ -107,7 +107,7 @@ Models a highway traffic stream using the Greenshields speed density model, comp
 **📊 Sample graph**
 
 <p align="center">
-  <img src="./Speed-Density%20and%20Speed-Volume%20Relationships%20Using%20Greenshield%27%20s%20Model.png" alt="Speed-Density and Speed-Volume Relationships Using Greenshield' s Model" width="720">
+  <img src="./Speed-Density%20and%20Speed-Volume%20Relationships%20Using%20Greenshield%27%20s%20Model.png" alt="Speed-Density and Speed-Volume Relationships Using Greenshield' s Model" width="720"><br><sub>Speed-Density and Speed-Volume Relationships Using Greenshield' s Model.png</sub>
 </p>
 
 ---
@@ -127,7 +127,7 @@ Models a highway traffic stream using the Greenberg speed density model, computi
 **📊 Sample graph**
 
 <p align="center">
-  <img src="./Speed-Density%20and%20Speed-Volume%20Relationships%20using%20Greenberg%20Model.png" alt="Speed-Density and Speed-Volume Relationships using Greenberg Model" width="720">
+  <img src="./Speed-Density%20and%20Speed-Volume%20Relationships%20using%20Greenberg%20Model.png" alt="Speed-Density and Speed-Volume Relationships using Greenberg Model" width="720"><br><sub>Speed-Density and Speed-Volume Relationships using Greenberg Model.png</sub>
 </p>
 
 ---
@@ -147,7 +147,7 @@ Models a highway traffic stream using the Underwood exponential speed density mo
 **📊 Sample graph**
 
 <p align="center">
-  <img src="./Speed-Density%20and%20Speed-Volume%20Relationships%20using%20Underwood%20Model.png" alt="Speed-Density and Speed-Volume Relationships using Underwood Model" width="720">
+  <img src="./Speed-Density%20and%20Speed-Volume%20Relationships%20using%20Underwood%20Model.png" alt="Speed-Density and Speed-Volume Relationships using Underwood Model" width="720"><br><sub>Speed-Density and Speed-Volume Relationships using Underwood Model.png</sub>
 </p>
 
 ---
