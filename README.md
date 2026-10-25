@@ -101,17 +101,17 @@ Collects and statistically analyzes spot speed data for a stretch of road, allow
 
 **📊 Sample graphs**
 
-<p align="center">
+<table align="center"><tr><td align="center">
   <img src="./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_1.png" alt="% frequency against middle speed, and cumulative % frequency against upper speed limit" width="720"><br><sub><b>Figure 1.</b> % frequency against middle speed, and cumulative % frequency against upper speed limit<br><a href="./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_1.png">%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_1.png</a> · from <a href="./speed_observation_data_Disclaimer_This_is_AI_Generated.csv">speed_observation_data_Disclaimer_This_is_AI_Generated.csv</a></sub>
-</p>
+</td></tr></table>
 
-<p align="center">
+<table align="center"><tr><td align="center">
   <img src="./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_2.png" alt="% frequency against middle speed, and cumulative % frequency against upper speed limit" width="720"><br><sub><b>Figure 2.</b> % frequency against middle speed, and cumulative % frequency against upper speed limit<br><a href="./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_2.png">%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_2.png</a></sub>
-</p>
+</td></tr></table>
 
-<p align="center">
+<table align="center"><tr><td align="center">
   <img src="./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_3.png" alt="% frequency against middle speed, and cumulative % frequency against upper speed limit" width="720"><br><sub><b>Figure 3.</b> % frequency against middle speed, and cumulative % frequency against upper speed limit<br><a href="./%25_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%25_Frequency_vs_Upper_Speed_Limit_3.png">%_Frequency_vs_Middle_Speed_Graph_and_Cumulative_%_Frequency_vs_Upper_Speed_Limit_3.png</a></sub>
-</p>
+</td></tr></table>
 
 ---
 
