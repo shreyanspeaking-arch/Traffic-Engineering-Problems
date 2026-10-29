@@ -10,7 +10,7 @@
 
 **Python programs that solve classic traffic and transportation engineering problems: queues, speed and volume studies, traffic flow models, modal split, highway design, safety and economics.**
 
-![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white) ![Programs](https://img.shields.io/badge/programs-28-2ea44f) ![Topics](https://img.shields.io/badge/topic%20branches-12-blue) ![Updated](https://img.shields.io/badge/updated-10%20Oct%202026-orange)
+![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white) ![Programs](https://img.shields.io/badge/programs-28-2ea44f) ![Topics](https://img.shields.io/badge/topic%20branches-12-blue) ![Updated](https://img.shields.io/badge/updated-29%20Oct%202026-orange)
 
 </div>
 
