@@ -38,6 +38,11 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 Estimates the total n-hour volume and peak-hour volume at each of m stations in a network, using the control-count/coverage-count expansion method.
 
+**🧰 Prerequisites**
+
+- **Python 3** with `pandas`, `numpy`, `openpyxl`: `pip install pandas numpy openpyxl`
+- **Data to have ready:** the control station's count for each of n consecutive time slots, and one count per coverage station taken in the first m−1 of those slots (m−1 must be less than n)
+
 **How it works**
 
 1. A control station's volume is recorded for each of n consecutive time slots.
@@ -51,6 +56,11 @@ Estimates the total n-hour volume and peak-hour volume at each of m stations in 
 📄 **File:** [`Multiday_Network_Study_Plan.py`](./Multiday_Network_Study_Plan.py)
 
 Estimates adjusted volumes at each of n coverage count locations in a network, using the day to day adjustment factor method.
+
+**🧰 Prerequisites**
+
+- **Python 3** with `pandas`, `numpy`, `openpyxl`: `pip install pandas numpy openpyxl`
+- **Data to have ready:** the control station's count for the same hours on each of n days, and one count per coverage location for those hours, each paired with one of the control days
 
 **How it works**
 
@@ -66,6 +76,11 @@ Estimates adjusted volumes at each of n coverage count locations in a network, u
 
 Estimates expanded and adjusted volumes at coverage count locations in a network, combining a within day slot expansion method with a day to day adjustment factor method.
 
+**🧰 Prerequisites**
+
+- **Python 3** with `pandas`, `numpy`, `openpyxl`: `pip install pandas numpy openpyxl`
+- **Data to have ready:** the control station's counts for s time slots on each of d days, using the same slot times every day, and the coverage station's counts for every slot on every day
+
 **How it works**
 
 1. A control station's volume is recorded across s time slots on each of d days, using the same slot start and end times on every day.
@@ -79,6 +94,11 @@ Estimates expanded and adjusted volumes at coverage count locations in a network
 📄 **File:** [`Specialized_Intersection_Counting_Studies_Using_Origin_and_Destination_Data.py`](./Specialized_Intersection_Counting_Studies_Using_Origin_and_Destination_Data.py)
 
 Balances an observed origin destination trip matrix to match forecasted zone totals, using the Furness iterative proportional fitting method.
+
+**🧰 Prerequisites**
+
+- **Python 3** with `pandas`: `pip install pandas`
+- **Data to have ready:** the observed trips between every pair of zones (a square origin destination matrix), the forecast total trip origins and destinations for each zone, and the acceptable error
 
 **How it works**
 
