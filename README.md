@@ -47,10 +47,12 @@ Analyzes a deterministic D/D/1 queue at a single service point. It computes queu
   - `sympy`
   - `matplotlib`
   - Install the packages with `pip install numpy sympy matplotlib`
+- **Choice you will be asked to make:** For departures: `1` if you have the average headway (s), `2` if you have the departure rate (veh/min)
 - **Data to have ready**
-  - Times at which the arrival and departure rates change
-  - The rate, or the average headway, at each change
-  - Number of vehicles already queued at the start
+  - The number of times the departure rate changes and the number of times the arrival rate changes (including the start)
+  - The initial departure rate or headway, and the initial arrival rate (veh/min)
+  - For each change: the time (min) and the new rates
+  - The number of vehicles already queued at the start (`0` if none)
 
 **How it works**
 
@@ -87,10 +89,16 @@ Analyzes deterministic queue buildup and dissipation over a series of time inter
   - `matplotlib`
   - `openpyxl`
   - Install the packages with `pip install pandas numpy matplotlib openpyxl`
+- **Choices you will be asked to make** (type the value shown)
+  - Input method: `1` read a CSV or Excel file, `2` type the values in
+  - Arrival rates: `1` in veh/h, `2` in veh/h/ln
+  - Departure rates: `1` in veh/h, `2` in veh/h/ln
+  - When typing values: press Enter if an interval starts where the previous one ended, `No` if not, or `L` for the last interval with no end time
 - **Data to have ready**
   - For each time interval: start time, end time, arrival rate and departure rate
-  - Number of lanes, if the rates are per lane
-  - Either typed in, or as a CSV or Excel file in the same folder as the program
+  - For per-lane rates: the number of lanes used for arrival and departure
+  - For a file: the file name with its extension (`.csv` or `.xlsx`), and the names of the columns holding each value
+  - A name for the output Excel file, typed without `.xlsx`
 
 **How it works**
 
@@ -179,9 +187,10 @@ Analyzes an M/D/1 queue: random, Poisson distributed arrivals, deterministic (fi
 - **Software**
   - Python 3
   - No extra packages needed
+- **Choice you will be asked to make:** Departures: `1` average headway (s), `2` average departure rate (veh/min)
 - **Data to have ready**
-  - Average arrival rate
-  - Average departure rate, or average headway between departures
+  - The average headway or departure rate
+  - The average arrival rate (veh/min)
 
 **How it works**
 
@@ -202,10 +211,13 @@ Analyzes an M/M/1 queue: random, Poisson distributed arrivals, random, exponenti
 - **Software**
   - Python 3
   - No extra packages needed
+- **Choices you will be asked to make** (type the value shown)
+  - Departures: `1` average headway (s), `2` average departure rate (veh/min), `3` departure counts over timed intervals
+  - Arrivals: `1` average arrival rate (veh/min), `2` arrival counts over timed intervals
+  - After the results: press Enter to find the probability of a given number of vehicles in the system, or `No` to finish
 - **Data to have ready**
-  - Average arrival rate
-  - Average departure rate
-  - Either directly, as average headways, or as vehicle counts over timed intervals
+  - For options `1` and `2`: the headway or rate
+  - For count options: each interval's length (min) and the number of vehicles or PCUs counted
 
 **How it works**
 
@@ -226,10 +238,13 @@ Analyzes an M/M/N queue: random, Poisson distributed arrivals, random, exponenti
 - **Software**
   - Python 3
   - No extra packages needed
+- **Choices you will be asked to make** (type the value shown)
+  - Departures per channel: `1` average headway (s), `2` average departure rate (veh/min), `3` departure counts over timed intervals
+  - Arrivals: `1` average arrival rate (veh/min), `2` arrival counts over timed intervals
+  - After the results: press Enter to find the probability of a given number of vehicles in the system, or `No` to finish
 - **Data to have ready**
-  - Average arrival rate
-  - Average departure rate per channel, directly, as headways or as counts over timed intervals
-  - Number of service channels
+  - The headways, rates or counts for your chosen options
+  - The number of departure channels
 
 **How it works**
 
