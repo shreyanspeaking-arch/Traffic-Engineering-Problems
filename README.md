@@ -45,9 +45,11 @@ Estimates the modal split between an origin and destination using a multinomial 
   - `sympy`
   - Install the packages with `pip install numpy sympy`
 - **Data to have ready**
-  - Number of commuters
-  - For each mode: its name and its utility function in terms of cost and travel time
-  - For each mode: its actual cost and travel time
+  - Names of the origin and destination
+  - Number of commuters travelling between them
+  - Number of modes and the name of each
+  - Each mode's utility function as an expression in `C` (cost) and `T` (travel time), using `*` for multiplication, e.g. `-0.2*C-0.05*T`
+  - Each mode's cost and travel time
 
 **How it works**
 
@@ -70,11 +72,16 @@ Estimates the modal split among competing modes of transport using a multinomial
   - `numpy`
   - `sympy`
   - Install the packages with `pip install numpy sympy`
+- **Choices you will be asked to make** (type the value shown)
+  - For each component of a mode's utility: `1` time in vehicle, `2` time out of vehicle, `3` travel expenses
+  - Ridership method: `1` from the total number of commuters, `2` from one mode's capacity, headway and load, with the modal split ratio and average occupancy of each mode
 - **Data to have ready**
-  - For each mode: utility coefficients for in vehicle time, out of vehicle time and travel cost
-  - For each mode: the actual time and cost values
-  - Either the total number of commuters
-  - Or the vehicle capacity, headway and percentage filled of a reference mode, with the modal split ratio and average occupancy of the other modes
+  - The unit of time and the currency symbol you will use
+  - Number of modes and the name of each
+  - Utility coefficients for in vehicle time, out of vehicle time and travel cost for each mode
+  - The time and cost components that make up each of those values
+  - For method `1`: the number of commuters in the hour
+  - For method `2`: the modal split ratio, the reference mode's headway, capacity and % of capacity filled, and the average occupancy of each mode
 
 **How it works**
 
@@ -97,11 +104,17 @@ Predicts the change in modal split and ridership between an origin and destinati
   - `numpy`
   - `sympy`
   - Install the packages with `pip install numpy sympy`
+- **Choices you will be asked to make** (type the value shown)
+  - Whether a mode of transport was added or removed: `Yes` or `No`
+  - If `Yes`: the infrastructure change that took place (a mode added, or a mode removed)
 - **Data to have ready**
+  - Names of the origin and destination
   - Number of commuters
-  - Each mode's utility function, cost and travel time before the change
-  - The modes added or removed by the change
-  - Updated costs and travel times after the change
+  - Number of modes before the change and the name of each
+  - Each mode's utility function as an expression in `C` (cost) and `T` (travel time), using `*` for multiplication, e.g. `-0.2*C-0.05*T`
+  - Each mode's cost and travel time before the change
+  - The name and utility function of any new mode, or the name of the mode removed
+  - Each remaining mode's cost and travel time after the change
 
 **How it works**
 
