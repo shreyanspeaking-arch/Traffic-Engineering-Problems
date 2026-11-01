@@ -44,10 +44,16 @@ Computes and plots the accumulation of vehicles within a cordon area over time, 
   - `matplotlib`
   - `openpyxl`
   - Install the packages with `pip install pandas numpy matplotlib openpyxl`
+- **Choices you will be asked to make** (type the value shown)
+  - Input method: `1` read a CSV or Excel file, `2` type the values in
+  - When typing values: `1` if every interval has the same length as the first, `2` to enter each interval's start and end time separately
+  - For each new interval: `1` if it starts where the previous one ended, `2` if it starts at a different time
+  - After each interval: press Enter to add another, or type `No` to finish
 - **Data to have ready**
-  - The accumulation already inside the cordon at the start
+  - The vehicles already inside the cordon at the start (`0` if none), with the start and end time (`H:M`) of that first observation
   - For each time interval: start time, end time, vehicles entering and vehicles leaving
-  - Either typed in, or as a CSV or Excel file in the same folder as the program
+  - For a file: the file name with its extension (`.csv` or `.xlsx`), and the names of the columns holding each value
+  - A name for the output Excel file, typed without `.xlsx`
 
 **How it works**
 
