@@ -39,6 +39,11 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 Analyzes a deterministic D/D/1 queue at a single service point. It computes queue dissipation time, maximum queue length, total vehicles served, average delay per vehicle, and average queue length, and plots cumulative arrivals and departures against time.
 
+**🧰 Prerequisites**
+
+- **Python 3** with `numpy`, `sympy`, `matplotlib`: `pip install numpy sympy matplotlib`
+- **Data to have ready:** the times at which the arrival and departure rates change, the rate or average headway at each change, and the number of vehicles already queued at the start
+
 **How it works**
 
 1. The user enters the number of instances at which the departure rate and the arrival rate change, along with the time, and either the average headway or the rate itself, at each change point, plus any vehicles already queued at the start of the study.
@@ -64,6 +69,11 @@ Analyzes a deterministic D/D/1 queue at a single service point. It computes queu
 📄 **File:** [`Deterministic_Queuing_Analysis.py`](./Deterministic_Queuing_Analysis.py)
 
 Analyzes deterministic queue buildup and dissipation over a series of time intervals with varying arrival and departure rates, either entered manually or read from a CSV or Excel file.
+
+**🧰 Prerequisites**
+
+- **Python 3** with `pandas`, `numpy`, `matplotlib`, `openpyxl`: `pip install pandas numpy matplotlib openpyxl`
+- **Data to have ready:** for each time interval its start and end time, arrival rate, departure rate and, for per-lane rates, the number of lanes, either typed in or as a CSV or Excel file in the same folder as the program
 
 **How it works**
 
@@ -147,6 +157,11 @@ Analyzes deterministic queue buildup and dissipation over a series of time inter
 
 Analyzes an M/D/1 queue: random, Poisson distributed arrivals, deterministic (fixed) service times, and a single server.
 
+**🧰 Prerequisites**
+
+- **Python 3** only, no extra packages needed
+- **Data to have ready:** the average arrival rate, and the average departure rate or the average headway between departures
+
 **How it works**
 
 1. The user enters the average departure rate, either directly or via the average headway between vehicles, and the average arrival rate.
@@ -161,6 +176,11 @@ Analyzes an M/D/1 queue: random, Poisson distributed arrivals, deterministic (fi
 
 Analyzes an M/M/1 queue: random, Poisson distributed arrivals, random, exponentially distributed service times, and a single server.
 
+**🧰 Prerequisites**
+
+- **Python 3** only, no extra packages needed
+- **Data to have ready:** the average arrival and departure rates, either directly, as average headways, or as vehicle counts over timed intervals
+
 **How it works**
 
 1. The user enters the average departure rate and average arrival rate, either directly, via average headway, or by providing aggregated counts of departures or arrivals over one or more timed intervals.
@@ -174,6 +194,11 @@ Analyzes an M/M/1 queue: random, Poisson distributed arrivals, random, exponenti
 📄 **File:** [`M_M_N_Queuing_Model.py`](./M_M_N_Queuing_Model.py)
 
 Analyzes an M/M/N queue: random, Poisson distributed arrivals, random, exponentially distributed service times, and N parallel service channels.
+
+**🧰 Prerequisites**
+
+- **Python 3** only, no extra packages needed
+- **Data to have ready:** the average arrival rate, the average departure rate per channel (directly, as headways or as counts over timed intervals), and the number of service channels
 
 **How it works**
 
