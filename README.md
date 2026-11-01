@@ -47,10 +47,14 @@ Calibrates daily and monthly traffic variation factors from a dataset of daily v
   - `matplotlib`
   - `openpyxl`
   - Install the packages with `pip install pandas numpy matplotlib openpyxl`
+- **Choices you will be asked to make** (type the value shown)
+  - Estimate AADT from the count on a particular day: `Yes`, or press Enter to skip (repeat for more days)
+  - Estimate annual vehicle kilometres travelled: `Yes`, or press Enter to skip
 - **Data to have ready**
-  - A CSV or Excel file of dates and daily vehicle volumes, ideally a full year, in the same folder as the program
-  - Optionally, the counts on specific dates
-  - Optionally, the segment length
+  - A CSV or Excel file of dates and daily vehicle volumes, ideally covering a full year, in the same folder as the program
+  - The names of the date and volume columns
+  - For AADT estimates: each date (`DD-MM-YYYY`) and its volume
+  - For vehicle km travelled: the segment length (km)
 
 **How it works**
 
@@ -121,8 +125,8 @@ Models a highway traffic stream using the Greenshields speed density model, comp
   - `matplotlib`
   - Install the packages with `pip install numpy sympy matplotlib`
 - **Data to have ready**
-  - The speed density relationship as a linear expression in the density K, such as `60-0.4*K`
-  - Speed and density units of your choice, used consistently
+  - The speed density relationship in the form `a-b*K`, e.g. `60-0.4*K`, where K is density (veh/km)
+  - Speed in km/h, so that capacity comes out in veh/h
 
 **How it works**
 
@@ -153,8 +157,8 @@ Models a highway traffic stream using the Greenberg speed density model, computi
   - `matplotlib`
   - Install the packages with `pip install numpy sympy matplotlib`
 - **Data to have ready**
-  - The speed density relationship as a natural logarithm expression in the density K
-  - Speed and density units of your choice, used consistently
+  - The speed density relationship in the form `a*ln(b/K)`, e.g. `30*ln(150/K)`, where K is density (veh/km)
+  - Speed in km/h, so that capacity comes out in veh/h
 
 **How it works**
 
@@ -185,8 +189,8 @@ Models a highway traffic stream using the Underwood exponential speed density mo
   - `matplotlib`
   - Install the packages with `pip install numpy sympy matplotlib`
 - **Data to have ready**
-  - The speed density relationship as an exponential expression in the density K
-  - A maximum density for the plot
+  - The speed density relationship in the form `a*exp(-(K/b))`, e.g. `80*exp(-(K/50))`, where K is density (veh/km)
+  - The maximum density to plot up to (veh/km), since this model has no jam density
 
 **How it works**
 
