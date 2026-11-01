@@ -45,8 +45,8 @@ Estimates the distribution of trips from a single origin zone to all other zones
   - Install the packages with `pip install pandas numpy openpyxl`
 - **Data to have ready**
   - Number of zones and the origin zone
-  - Deterrence parameter alpha
-  - For each zone: generalised travel cost, productions and attractions
+  - The deterrence parameter (alpha)
+  - For each zone: generalised travel cost (in time), productions and attractions
 
 **How it works**
 
