@@ -35,6 +35,11 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 Computes and plots the accumulation of vehicles within a cordon area over time, based on vehicles entering and leaving at the cordon boundary.
 
+**🧰 Prerequisites**
+
+- **Python 3** with `pandas`, `numpy`, `matplotlib`, `openpyxl`: `pip install pandas numpy matplotlib openpyxl`
+- **Data to have ready:** the accumulation already inside the cordon at the start, and for each time interval its start time, end time and the numbers of vehicles entering and leaving, either typed in or as a CSV or Excel file in the same folder as the program
+
 **How it works**
 
 1. The user first enters a known starting accumulation value, observed over an initial time interval.
