@@ -38,6 +38,11 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 Calibrates daily and monthly traffic variation factors from a dataset of daily vehicle volumes, and uses them to estimate Average Annual Daily Traffic and Annual Vehicle Kilometers Travelled for a road segment.
 
+**🧰 Prerequisites**
+
+- **Python 3** with `pandas`, `numpy`, `matplotlib`, `openpyxl`: `pip install pandas numpy matplotlib openpyxl`
+- **Data to have ready:** a CSV or Excel file of dates and daily vehicle volumes, ideally covering a full year, in the same folder as the program; optionally the counts on specific dates and the segment length
+
 **How it works**
 
 1. The program reads a CSV or Excel file of dates and vehicle volumes, computes the average volume for each day of the week and each month of the year, and derives a Daily Adjustment Factor and a Monthly Adjustment Factor for each, based on their ratio to the overall average.
@@ -98,6 +103,11 @@ Calibrates daily and monthly traffic variation factors from a dataset of daily v
 
 Models a highway traffic stream using the Greenshields speed density model, computing capacity and plotting the corresponding speed density and speed volume relationships.
 
+**🧰 Prerequisites**
+
+- **Python 3** with `numpy`, `sympy`, `matplotlib`: `pip install numpy sympy matplotlib`
+- **Data to have ready:** the speed density relationship as a linear expression in the density K, such as `60-0.4*K`
+
 **How it works**
 
 1. The user enters the model's speed as a linear function of density, in the form of a straight line expression involving traffic density K.
@@ -118,6 +128,11 @@ Models a highway traffic stream using the Greenshields speed density model, comp
 
 Models a highway traffic stream using the Greenberg speed density model, computing capacity and plotting the corresponding speed density and speed volume relationships.
 
+**🧰 Prerequisites**
+
+- **Python 3** with `numpy`, `sympy`, `matplotlib`: `pip install numpy sympy matplotlib`
+- **Data to have ready:** the speed density relationship as a natural logarithm expression in the density K
+
 **How it works**
 
 1. The user enters the model's speed as a function of density, in the form of a natural logarithm expression involving traffic density K.
@@ -137,6 +152,11 @@ Models a highway traffic stream using the Greenberg speed density model, computi
 📄 **File:** [`Underwood_Model.py`](./Underwood_Model.py)
 
 Models a highway traffic stream using the Underwood exponential speed density model, computing capacity and plotting the corresponding speed density and speed volume relationships.
+
+**🧰 Prerequisites**
+
+- **Python 3** with `numpy`, `sympy`, `matplotlib`: `pip install numpy sympy matplotlib`
+- **Data to have ready:** the speed density relationship as an exponential expression in the density K, and a maximum density for the plot
 
 **How it works**
 
