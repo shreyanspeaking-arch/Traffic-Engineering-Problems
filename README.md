@@ -35,6 +35,11 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 Performs an economic appraisal of a highway project using cost benefit analysis, estimating user benefits from reduced accidents, reduced vehicle operating costs, and reduced travel time, and comparing their discounted value against discounted project costs to compute Net Present Value.
 
+**🧰 Prerequisites**
+
+- **Python 3** with `pandas`, `numpy`, `sympy`, `openpyxl`: `pip install pandas numpy sympy openpyxl`
+- **Data to have ready:** the project's economic life and construction period, accident rates before and after and the average cost of an accident, average speeds before and after, the discount rate, a formula for vehicle operating cost in terms of speed, and for each year either the construction cost or the predicted traffic flow and operating cost
+
 **How it works**
 
 1. The user enters the project's economic life, the number of years required for initial construction, accident rates and average accident cost, average vehicle speeds before and after the upgrade, the discount rate, and a formula for average vehicle operating cost as a function of speed.
