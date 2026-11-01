@@ -36,6 +36,12 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 Predicts the annual number of crashes at a four leg signalized intersection, using safety performance functions and crash modification factors consistent with the predictive method in Part C, Chapter 12 of the Highway Safety Manual (HSM), 1st Edition (2010).
 
+**🧰 Prerequisites**
+
+- **Python 3** with `pandas`, `sympy`: `pip install pandas sympy`
+- **In the same folder as the program:** [`Table_12_10_CMF_Left_Turn_Phasing.csv`](./Table_12_10_CMF_Left_Turn_Phasing.csv), [`Table_12_11_Formatted.csv`](./Table_12_11_Formatted.csv), [`Table_12_4_Calibration_Coefficients.csv`](./Table_12_4_Calibration_Coefficients.csv), [`Table_12_5_Calibration_Coefficients.csv`](./Table_12_5_Calibration_Coefficients.csv), [`Table_12_6_Calibration_Coefficients.csv`](./Table_12_6_Calibration_Coefficients.csv), [`Table_12_7_Pedestrian_Volume_Default_Values.csv`](./Table_12_7_Pedestrian_Volume_Default_Values.csv), [`Table_12_9_CMF_Turn_Lanes.csv`](./Table_12_9_CMF_Turn_Lanes.csv) (included in this branch)
+- **Data to have ready:** the AADT on the major and minor streets, the daily pedestrian volume or the general level of pedestrian activity, the maximum number of lanes a pedestrian crosses, the number of approaches with left and right turn lanes, approaches prohibiting right turn on red, the left turn phasing, the numbers of schools, bus stops and alcohol selling stores within 1000 ft, and a local calibration factor
+
 **How it works**
 
 1. Using the major and minor street traffic volumes and the calibration coefficients of Tables 12-4 and 12-5, the program computes base crash frequencies for multi-vehicle and single-vehicle crashes, split into injury and fatal, and property damage only components.
@@ -78,6 +84,11 @@ Predicts the annual number of crashes at a four leg signalized intersection, usi
 📄 **File:** [`Safe_Stopping_Distance_SSD.py`](./Safe_Stopping_Distance_SSD.py)
 
 Computes and compares the Safe Stopping Distance (SSD) between two model vehicles, A and B, across multiple user-defined cases, accounting for reaction time, road grade, coefficient of friction, and relative direction of movement.
+
+**🧰 Prerequisites**
+
+- **Python 3** with `pandas`, `numpy`, `matplotlib`, `openpyxl`: `pip install pandas numpy matplotlib openpyxl`
+- **Data to have ready:** for each case, the speed unit, total reaction plus maneuver time, the speeds of both vehicles, the grade of the road for each, the coefficient of friction for each and any head start distance
 
 **How it works**
 
