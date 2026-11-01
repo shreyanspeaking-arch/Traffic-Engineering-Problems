@@ -38,9 +38,28 @@ Predicts the annual number of crashes at a four leg signalized intersection, usi
 
 **🧰 Prerequisites**
 
-- **Python 3** with `pandas`, `sympy`: `pip install pandas sympy`
-- **In the same folder as the program:** [`Table_12_10_CMF_Left_Turn_Phasing.csv`](./Table_12_10_CMF_Left_Turn_Phasing.csv), [`Table_12_11_Formatted.csv`](./Table_12_11_Formatted.csv), [`Table_12_4_Calibration_Coefficients.csv`](./Table_12_4_Calibration_Coefficients.csv), [`Table_12_5_Calibration_Coefficients.csv`](./Table_12_5_Calibration_Coefficients.csv), [`Table_12_6_Calibration_Coefficients.csv`](./Table_12_6_Calibration_Coefficients.csv), [`Table_12_7_Pedestrian_Volume_Default_Values.csv`](./Table_12_7_Pedestrian_Volume_Default_Values.csv), [`Table_12_9_CMF_Turn_Lanes.csv`](./Table_12_9_CMF_Turn_Lanes.csv) (included in this branch)
-- **Data to have ready:** the AADT on the major and minor streets, the daily pedestrian volume or the general level of pedestrian activity, the maximum number of lanes a pedestrian crosses, the number of approaches with left and right turn lanes, approaches prohibiting right turn on red, the left turn phasing, the numbers of schools, bus stops and alcohol selling stores within 1000 ft, and a local calibration factor
+- **Software**
+  - Python 3
+  - `pandas`
+  - `sympy`
+  - Install the packages with `pip install pandas sympy`
+- **Files in the same folder as the program** (included in this branch)
+  - [`Table_12_10_CMF_Left_Turn_Phasing.csv`](./Table_12_10_CMF_Left_Turn_Phasing.csv)
+  - [`Table_12_11_Formatted.csv`](./Table_12_11_Formatted.csv)
+  - [`Table_12_4_Calibration_Coefficients.csv`](./Table_12_4_Calibration_Coefficients.csv)
+  - [`Table_12_5_Calibration_Coefficients.csv`](./Table_12_5_Calibration_Coefficients.csv)
+  - [`Table_12_6_Calibration_Coefficients.csv`](./Table_12_6_Calibration_Coefficients.csv)
+  - [`Table_12_7_Pedestrian_Volume_Default_Values.csv`](./Table_12_7_Pedestrian_Volume_Default_Values.csv)
+  - [`Table_12_9_CMF_Turn_Lanes.csv`](./Table_12_9_CMF_Turn_Lanes.csv)
+- **Data to have ready**
+  - AADT on the major and minor streets
+  - Daily pedestrian volume, or the general level of pedestrian activity
+  - Maximum number of lanes a pedestrian crosses
+  - Number of approaches with left turn lanes and with right turn lanes
+  - Number of approaches prohibiting right turn on red
+  - Type of left turn phasing
+  - Numbers of schools, bus stops and alcohol selling stores within 1000 ft
+  - Local calibration factor
 
 **How it works**
 
@@ -87,8 +106,19 @@ Computes and compares the Safe Stopping Distance (SSD) between two model vehicle
 
 **🧰 Prerequisites**
 
-- **Python 3** with `pandas`, `numpy`, `matplotlib`, `openpyxl`: `pip install pandas numpy matplotlib openpyxl`
-- **Data to have ready:** for each case, the speed unit, total reaction plus maneuver time, the speeds of both vehicles, the grade of the road for each, the coefficient of friction for each and any head start distance
+- **Software**
+  - Python 3
+  - `pandas`
+  - `numpy`
+  - `matplotlib`
+  - `openpyxl`
+  - Install the packages with `pip install pandas numpy matplotlib openpyxl`
+- **Data to have ready**
+  - Speed unit (kmph or mph)
+  - For each case: total reaction plus maneuver time
+  - For each case: the speeds of both vehicles
+  - For each case: the grade of the road and the coefficient of friction for each vehicle
+  - For each case: any head start distance
 
 **How it works**
 
