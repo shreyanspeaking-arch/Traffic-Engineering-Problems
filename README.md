@@ -41,10 +41,17 @@ Computes key parameters of a parabolic vertical curve used in highway alignment 
 - **Software**
   - Python 3
   - No extra packages needed
+- **Choices you will be asked to make** (type the value shown)
+  - `1` the K value of the curve (horizontal distance for a 1% change in grade)
+  - `2` the coordinates of a point on the curve, for a given x coordinate
+  - `3` the vertical offset at the point of intersection of the two tangents
+  - `4` the vertical offset at a point on the curve, for a given x coordinate
+  - `5` the horizontal and vertical offsets of the highest (or lowest) point on the curve
+  - After each result: type `N` to stop, or anything else to choose another option
 - **Data to have ready**
-  - Coordinates (distance and elevation, in m) of tangent point T1
-  - Coordinates (distance and elevation, in m) of tangent point T2
-  - The grade (%) at each tangent point
+  - The coordinates of tangent points T1 and T2, typed as `(x,y)` in metres, e.g. `(0,100)`
+  - The grade at each tangent point in %, with its sign, e.g. `2.5` or `-1.5`
+  - For options 2 and 4, the x coordinate of the point (m)
 
 **How it works**
 
@@ -70,11 +77,13 @@ Estimates the required superelevation and checks the safety of a highway curve, 
 - **Software**
   - Python 3
   - No extra packages needed
+- **Choices you will be asked to make** (type the value shown)
+  - Desired superelevation: `1` to use the common value of 0.07, `2` to enter your own
+  - Coefficient of side friction: `1` to use the common value of 0.15, `2` to enter your own
 - **Data to have ready**
   - Design speed (km/h)
   - Radius of the curve (m)
-  - Optionally, a desired superelevation (default 0.07)
-  - Optionally, a coefficient of side friction (default 0.15)
+  - Your own superelevation and side friction values, if you choose `2`
 
 **How it works**
 
