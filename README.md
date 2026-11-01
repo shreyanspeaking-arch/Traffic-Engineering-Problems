@@ -51,15 +51,18 @@ Predicts the annual number of crashes at a four leg signalized intersection, usi
   - [`Table_12_6_Calibration_Coefficients.csv`](./Table_12_6_Calibration_Coefficients.csv)
   - [`Table_12_7_Pedestrian_Volume_Default_Values.csv`](./Table_12_7_Pedestrian_Volume_Default_Values.csv)
   - [`Table_12_9_CMF_Turn_Lanes.csv`](./Table_12_9_CMF_Turn_Lanes.csv)
+- **Choices you will be asked to make** (type the value shown)
+  - Pedestrian volume known: `Yes` to enter the daily count, or `No` to pick an activity level: `high`, `medium - high`, `medium`, `medium - low` or `low`
+  - Left turn phasing type: `Permitted`, `Compound` (protected + permitted) or `Protected`
+  - Red light camera crash data: `Yes1` to enter crash counts, `Yes2` to enter proportions, `No` if none (use `No` unless the intersection has a red light camera)
 - **Data to have ready**
-  - AADT on the major and minor streets
-  - Daily pedestrian volume, or the general level of pedestrian activity
+  - AADT on the major and minor streets (veh/day)
+  - Daily pedestrian volume, if known
   - Maximum number of lanes a pedestrian crosses
-  - Number of approaches with left turn lanes and with right turn lanes
-  - Number of approaches prohibiting right turn on red
-  - Type of left turn phasing
+  - Number of approaches (0 to 4) with left turn lanes and with right turn lanes
+  - Number of approaches prohibiting right turn on red, and number with exclusive left turn phasing
   - Numbers of schools, bus stops and alcohol selling stores within 1000 ft
-  - Local calibration factor
+  - A local calibration factor (`1` if unknown)
 
 **How it works**
 
@@ -113,12 +116,19 @@ Computes and compares the Safe Stopping Distance (SSD) between two model vehicle
   - `matplotlib`
   - `openpyxl`
   - Install the packages with `pip install pandas numpy matplotlib openpyxl`
+- **Choices you will be asked to make** (type the value shown)
+  - Speed unit: `kmph` or `mph`
+  - Grade: enter it in degrees as `5o`, or as a percentage as `4%`; press Enter if both vehicles share the same grade
+  - Friction: press Enter if both vehicles share the same coefficient, or `No` to enter each
+  - Direction of each vehicle: `1` uphill, `2` downhill; and the vehicles' relative direction: `same` or `opposite`
+  - After each case: press Enter to compare another case, or `No` to finish
 - **Data to have ready**
-  - Speed unit (kmph or mph)
-  - For each case: total reaction plus maneuver time
-  - For each case: the speeds of both vehicles
-  - For each case: the grade of the road and the coefficient of friction for each vehicle
-  - For each case: any head start distance
+  - Total reaction plus maneuver time (s)
+  - Speeds of vehicles A and B
+  - Coefficient of friction between each vehicle's wheels and the pavement
+  - Head start distance between the vehicles (m; `0` if unknown)
+  - An optional description for each case
+  - A name for the output Excel file, typed without `.xlsx`
 
 **How it works**
 
