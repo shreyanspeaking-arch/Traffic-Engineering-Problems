@@ -39,8 +39,15 @@ Estimates the modal split between an origin and destination using a multinomial 
 
 **🧰 Prerequisites**
 
-- **Python 3** with `numpy`, `sympy`: `pip install numpy sympy`
-- **Data to have ready:** the number of commuters and, for each mode, its name, its utility function in terms of cost and travel time, and its actual cost and travel time
+- **Software**
+  - Python 3
+  - `numpy`
+  - `sympy`
+  - Install the packages with `pip install numpy sympy`
+- **Data to have ready**
+  - Number of commuters
+  - For each mode: its name and its utility function in terms of cost and travel time
+  - For each mode: its actual cost and travel time
 
 **How it works**
 
@@ -58,8 +65,16 @@ Estimates the modal split among competing modes of transport using a multinomial
 
 **🧰 Prerequisites**
 
-- **Python 3** with `numpy`, `sympy`: `pip install numpy sympy`
-- **Data to have ready:** for each mode, the utility coefficients for in vehicle time, out of vehicle time and travel cost along with their actual values; then either the total number of commuters, or the vehicle capacity, headway and percentage filled of a reference mode with the modal split ratio and average occupancy of the other modes
+- **Software**
+  - Python 3
+  - `numpy`
+  - `sympy`
+  - Install the packages with `pip install numpy sympy`
+- **Data to have ready**
+  - For each mode: utility coefficients for in vehicle time, out of vehicle time and travel cost
+  - For each mode: the actual time and cost values
+  - Either the total number of commuters
+  - Or the vehicle capacity, headway and percentage filled of a reference mode, with the modal split ratio and average occupancy of the other modes
 
 **How it works**
 
@@ -77,8 +92,16 @@ Predicts the change in modal split and ridership between an origin and destinati
 
 **🧰 Prerequisites**
 
-- **Python 3** with `numpy`, `sympy`: `pip install numpy sympy`
-- **Data to have ready:** the number of commuters and each mode's utility function, cost and travel time before the change, the modes added or removed, and the updated costs and travel times after the change
+- **Software**
+  - Python 3
+  - `numpy`
+  - `sympy`
+  - Install the packages with `pip install numpy sympy`
+- **Data to have ready**
+  - Number of commuters
+  - Each mode's utility function, cost and travel time before the change
+  - The modes added or removed by the change
+  - Updated costs and travel times after the change
 
 **How it works**
 
