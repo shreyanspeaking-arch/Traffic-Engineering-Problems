@@ -93,7 +93,7 @@ This repository has 13 sub-branches (excluding main) as of 10th October 2026.
 
 ### 🦺 [Traffic Safety Analysis](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Traffic-Safety-Analysis)
 
-- [**Crash Prediction at a Four Leg Signalized Intersection**](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Safety-Analysis/Traffic_Safety_Analysis_at_a_4_signal_intersection.py): Predicted crashes per year using the HSM method
+- [**Crash Prediction at a Four Leg Signalized Intersection**](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Safety-Analysis/Traffic_Safety_Analysis_at_a_4_signal_intersection.py): Predicted crashes per year using the HSM 1st Edition (2010) method
 - [**Safe Stopping Distance (SSD)**](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/blob/Traffic-Safety-Analysis/Safe_Stopping_Distance_SSD.py): Stopping distance between two vehicles across many cases
 
 ### 📈 [Traffic Volume Studies](https://github.com/shreyanspeaking-arch/Traffic-Engineering-Problems/tree/Traffic-Volume-Studies)
