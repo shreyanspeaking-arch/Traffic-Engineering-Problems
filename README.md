@@ -38,9 +38,18 @@ Estimates the Level of Service of a multilane highway under ideal conditions, us
 
 **🧰 Prerequisites**
 
-- **Python 3** with `pandas`: `pip install pandas`
-- **In the same folder as the program:** [`Table1.csv`](./Table1.csv), [`Table2.csv`](./Table2.csv) (included in this branch)
-- **Data to have ready:** the total number of lanes, peak hour volume, peak hour factor and design speed
+- **Software**
+  - Python 3
+  - `pandas`
+  - Install the packages with `pip install pandas`
+- **Files in the same folder as the program** (included in this branch)
+  - [`Table1.csv`](./Table1.csv)
+  - [`Table2.csv`](./Table2.csv)
+- **Data to have ready**
+  - Total number of lanes
+  - Peak hour volume
+  - Peak hour factor
+  - Design speed
 
 **How it works**
 
@@ -65,9 +74,24 @@ Estimates the Level of Service of a multilane highway under non ideal conditions
 
 **🧰 Prerequisites**
 
-- **Python 3** with `pandas`: `pip install pandas`
-- **In the same folder as the program:** [`Table1.csv`](./Table1.csv), [`Table2.csv`](./Table2.csv), [`Table_5_3_Correction_Factors.csv`](./Table_5_3_Correction_Factors.csv), [`Table_5_4_PCE_Heavy_Vehicles.csv`](./Table_5_4_PCE_Heavy_Vehicles.csv), [`Table_5_5_Highway_Environment_Correction_Factors.csv`](./Table_5_5_Highway_Environment_Correction_Factors.csv) (included in this branch)
-- **Data to have ready:** the total number of lanes, peak hour volume, peak hour factor, design speed, lane width, obstruction clearance, terrain type, percentage of heavy vehicles, driver population and highway classification
+- **Software**
+  - Python 3
+  - `pandas`
+  - Install the packages with `pip install pandas`
+- **Files in the same folder as the program** (included in this branch)
+  - [`Table1.csv`](./Table1.csv)
+  - [`Table2.csv`](./Table2.csv)
+  - [`Table_5_3_Correction_Factors.csv`](./Table_5_3_Correction_Factors.csv)
+  - [`Table_5_4_PCE_Heavy_Vehicles.csv`](./Table_5_4_PCE_Heavy_Vehicles.csv)
+  - [`Table_5_5_Highway_Environment_Correction_Factors.csv`](./Table_5_5_Highway_Environment_Correction_Factors.csv)
+- **Data to have ready**
+  - Total number of lanes
+  - Peak hour volume and peak hour factor
+  - Design speed
+  - Lane width and obstruction clearance
+  - Terrain type
+  - Percentage of heavy vehicles
+  - Driver population and highway classification
 
 **How it works**
 
