@@ -45,11 +45,11 @@ Estimates the Level of Service of a multilane highway under ideal conditions, us
 - **Files in the same folder as the program** (included in this branch)
   - [`Table1.csv`](./Table1.csv)
   - [`Table2.csv`](./Table2.csv)
+- **Choice you will be asked to make:** Design speed: `50`, `60` or `70` (mi/h); other values are not accepted
 - **Data to have ready**
-  - Total number of lanes
-  - Peak hour volume
+  - Total number of lanes (both directions)
+  - Peak hour volume (veh/h)
   - Peak hour factor
-  - Design speed
 
 **How it works**
 
@@ -84,14 +84,19 @@ Estimates the Level of Service of a multilane highway under non ideal conditions
   - [`Table_5_3_Correction_Factors.csv`](./Table_5_3_Correction_Factors.csv)
   - [`Table_5_4_PCE_Heavy_Vehicles.csv`](./Table_5_4_PCE_Heavy_Vehicles.csv)
   - [`Table_5_5_Highway_Environment_Correction_Factors.csv`](./Table_5_5_Highway_Environment_Correction_Factors.csv)
+- **Choices you will be asked to make** (type the value shown)
+  - Design speed: `50`, `60` or `70` (mi/h)
+  - Obstructions on `One` or `Both` sides of the roadway
+  - Lane width: `3.65`, `3.36`, `3.05` or `2.75` (m)
+  - Terrain: `Level`, `Rolling` or `Mountainous`
+  - Drivers are regular weekday commuters: `Yes` or `No`; for `No`, a driver population factor between 0.75 and 0.9
+  - Highway: `Divided` or `Undivided`
+  - Location: `Rural` or `Urban/suburban`
 - **Data to have ready**
-  - Total number of lanes
-  - Peak hour volume and peak hour factor
-  - Design speed
-  - Lane width and obstruction clearance
-  - Terrain type
-  - Percentage of heavy vehicles
-  - Driver population and highway classification
+  - Total number of lanes (both directions)
+  - Peak hour volume (veh/h) and peak hour factor
+  - Distance of obstructions from the travelled edge (m)
+  - Percentages of trucks, buses and recreational vehicles
 
 **How it works**
 
