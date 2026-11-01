@@ -35,6 +35,11 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 Estimates the distribution of trips from a single origin zone to all other zones in a network, using a singly constrained gravity model with a power function cost deterrence factor, based on generalised travel cost expressed in time.
 
+**🧰 Prerequisites**
+
+- **Python 3** with `pandas`, `numpy`, `openpyxl`: `pip install pandas numpy openpyxl`
+- **Data to have ready:** the number of zones, the origin zone, the deterrence parameter alpha, and the generalised travel cost, productions and attractions for each zone
+
 **How it works**
 
 1. The user enters the number of zones, the origin zone, and a modal deterrence parameter (alpha) governing the sensitivity of trips to travel cost.
