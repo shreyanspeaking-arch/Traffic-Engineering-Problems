@@ -36,6 +36,11 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 Computes key parameters of a parabolic vertical curve used in highway alignment design, given the coordinates and grades at the two tangent points.
 
+**🧰 Prerequisites**
+
+- **Python 3** only, no extra packages needed
+- **Data to have ready:** the coordinates (distance and elevation, in m) of the two tangent points T1 and T2 and the grade (%) at each
+
 **How it works**
 
 1. The user enters the coordinates of tangent points T1 and T2, along with the signed grade in percent at each point.
@@ -54,6 +59,11 @@ Computes key parameters of a parabolic vertical curve used in highway alignment 
 📄 **File:** [`Super_Elevation_Estimation_for_Highway_Curve.py`](./Super_Elevation_Estimation_for_Highway_Curve.py)
 
 Estimates the required superelevation and checks the safety of a highway curve, based on the model prescribed by IRC:73-2023.
+
+**🧰 Prerequisites**
+
+- **Python 3** only, no extra packages needed
+- **Data to have ready:** the design speed (km/h) and the radius of the curve (m); optionally a desired superelevation and coefficient of side friction, otherwise the defaults of 0.07 and 0.15 are used
 
 **How it works**
 
