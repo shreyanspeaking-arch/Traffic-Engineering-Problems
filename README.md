@@ -20,7 +20,7 @@ Programs for predicting crashes and checking that drivers have enough distance t
 
 | # | Program | What it does |
 |:-:|---|---|
-| 1 | [**Crash Prediction at a Four Leg Signalized Intersection**](#1-crash-prediction-at-a-four-leg-signalized-intersection) | Predicted crashes per year using the HSM method |
+| 1 | [**Crash Prediction at a Four Leg Signalized Intersection**](#1-crash-prediction-at-a-four-leg-signalized-intersection) | Predicted crashes per year using the HSM 1st Edition (2010) method |
 | 2 | [**Safe Stopping Distance (SSD)**](#2-safe-stopping-distance-ssd) | Stopping distance between two vehicles across many cases |
 
 ## ⚙️ Getting started
@@ -40,15 +40,23 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 📄 **File:** [`Traffic_Safety_Analysis_at_a_4_signal_intersection.py`](./Traffic_Safety_Analysis_at_a_4_signal_intersection.py)
 
-Predicts the annual number of crashes at a four leg signalized intersection, using safety performance functions and crash modification factors consistent with the Highway Safety Manual predictive method.
+Predicts the annual number of crashes at a four leg signalized intersection, using safety performance functions and crash modification factors consistent with the predictive method in Part C, Chapter 12 of the Highway Safety Manual (HSM), 1st Edition (2010).
 
 **How it works**
 
 1. Using the major and minor street traffic volumes and the calibration coefficients of Tables 12-4 and 12-5, the program computes base crash frequencies for multi-vehicle and single-vehicle crashes, split into injury and fatal, and property damage only components.
 2. Using the pedestrian volume (or a default from Table 12-7), the maximum number of lanes a pedestrian must cross, and the coefficients of Table 12-6, the program computes a base pedestrian crash frequency.
-3. The program applies crash modification factors for turn lanes (Table 12-9) and left turn phasing (Table 12-10). The user also enters the number of approaches prohibiting right turn on red, and either the number or proportion of multi-vehicle crashes that are right angle or rear end collisions, from which the program derives further crash modification factors for right turn on red restrictions and red light cameras.
+3. The program applies crash modification factors for turn lanes (Table 12-9) and left turn phasing (Table 12-10). The user also enters the number of approaches prohibiting right turn on red, and either the number or proportion of multi-vehicle crashes that are right angle or rear end collisions, from which the program derives further crash modification factors for right turn on red restrictions and red light cameras. A crash modification factor for intersection lighting is also applied.
 4. Crash modification factors for nearby schools, bus stops and alcohol selling stores (Table 12-11) are applied to the base pedestrian crash frequency.
 5. The program combines the adjusted vehicle, pedestrian, and bicycle crash predictions, applies a user supplied local calibration factor, and reports the total predicted number of crashes per year at the intersection.
+
+> [!NOTE]
+> **Assumptions and limitations**
+> - The intersection is assumed to be lit: the lighting crash modification factor (1 − 0.38 × 0.235 ≈ 0.91) is always applied, so for an unlit intersection the prediction is about 9% too low.
+> - The red light camera crash modification factor is applied whenever right angle and rear end crash data are entered. Enter `<No>` at that prompt unless the intersection has a red light camera.
+> - When crash counts are entered, the right angle and rear end proportions are taken relative to the sum of those two crash types, whereas the HSM uses all multi-vehicle crashes.
+> - The Empirical Bayes adjustment with observed crash history is not included, so the result is the predicted crash frequency, not the expected crash frequency.
+> - The safety performance functions were developed from crash data in the United States. For intersections elsewhere, such as in India, a locally calibrated factor should be used instead of 1.
 
 **📥 Data files it reads**
 
