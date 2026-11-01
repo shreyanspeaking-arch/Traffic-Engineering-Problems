@@ -44,9 +44,12 @@ Computes and visualizes monthly and annual traffic volume parameters from a data
   - `matplotlib`
   - `openpyxl`
   - Install the packages with `pip install pandas numpy matplotlib openpyxl`
+- **Choice you will be asked to make:** Input method: `1` read a CSV or Excel file, `2` type the values in
 - **Data to have ready**
-  - Dates and daily vehicle volumes, ideally a full year
-  - Either typed in, or as a CSV or Excel file in the same folder as the program
+  - Dates and daily vehicle volumes, ideally covering a full year
+  - For typed values: each date (`DD-MM-YYYY`) and its volume
+  - For a file: the file name with its extension (`.csv` or `.xlsx`), and the names of the columns holding each value
+  - A name for the output Excel file, typed without `.xlsx`
 
 **How it works**
 
