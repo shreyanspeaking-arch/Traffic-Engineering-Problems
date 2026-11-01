@@ -37,8 +37,16 @@ Estimates the distribution of trips from a single origin zone to all other zones
 
 **🧰 Prerequisites**
 
-- **Python 3** with `pandas`, `numpy`, `openpyxl`: `pip install pandas numpy openpyxl`
-- **Data to have ready:** the number of zones, the origin zone, the deterrence parameter alpha, and the generalised travel cost, productions and attractions for each zone
+- **Software**
+  - Python 3
+  - `pandas`
+  - `numpy`
+  - `openpyxl`
+  - Install the packages with `pip install pandas numpy openpyxl`
+- **Data to have ready**
+  - Number of zones and the origin zone
+  - Deterrence parameter alpha
+  - For each zone: generalised travel cost, productions and attractions
 
 **How it works**
 
