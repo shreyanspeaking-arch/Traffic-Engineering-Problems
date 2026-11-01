@@ -36,6 +36,11 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 Collects and statistically analyzes spot speed data for a stretch of road, allowing entry either vehicle by vehicle, as pre-grouped speed intervals, or by importing a CSV or Excel file.
 
+**🧰 Prerequisites**
+
+- **Python 3** with `pandas`, `numpy`, `scipy`, `matplotlib`, `openpyxl`: `pip install pandas numpy scipy matplotlib openpyxl`
+- **Data to have ready:** the spot speeds observed on the road, either vehicle by vehicle, as speed classes with the number of vehicles in each, or as a CSV or Excel file of lower limit, upper limit and number of vehicles in the same folder as the program; and the maximum acceptable percentage error
+
 **How it works**
 
 1. The program computes the frequency distribution of speeds, fits smooth interpolated curves to the frequency and cumulative frequency data, and derives the mean, variance, standard deviation, median, and modal speed from this distribution.
@@ -120,6 +125,11 @@ Collects and statistically analyzes spot speed data for a stretch of road, allow
 📄 **File:** [`Space_and_Time_Mean_Speed.py`](./Space_and_Time_Mean_Speed.py)
 
 Contains two functions, `space_mean_speed` and `time_mean_speed`, meant to be imported and used within other traffic analysis programs. Speeds are in m/s.
+
+**🧰 Prerequisites**
+
+- **Python 3** only, no extra packages needed
+- **Data to have ready:** the length of the road segment and each vehicle's travel time across it (space mean speed), or each vehicle's speed at a fixed point (time mean speed), in metres and seconds
 
 **How it works**
 
