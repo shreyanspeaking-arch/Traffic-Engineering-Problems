@@ -37,8 +37,20 @@ Performs an economic appraisal of a highway project using cost benefit analysis,
 
 **🧰 Prerequisites**
 
-- **Python 3** with `pandas`, `numpy`, `sympy`, `openpyxl`: `pip install pandas numpy sympy openpyxl`
-- **Data to have ready:** the project's economic life and construction period, accident rates before and after and the average cost of an accident, average speeds before and after, the discount rate, a formula for vehicle operating cost in terms of speed, and for each year either the construction cost or the predicted traffic flow and operating cost
+- **Software**
+  - Python 3
+  - `pandas`
+  - `numpy`
+  - `sympy`
+  - `openpyxl`
+  - Install the packages with `pip install pandas numpy sympy openpyxl`
+- **Data to have ready**
+  - Economic life of the project and years of construction
+  - Accident rates before and after, and the average cost of an accident
+  - Average vehicle speeds before and after
+  - Discount rate
+  - A formula for vehicle operating cost in terms of speed
+  - For each year: the construction cost, or the predicted traffic flow and operating cost
 
 **How it works**
 
