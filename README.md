@@ -38,8 +38,18 @@ Collects and statistically analyzes spot speed data for a stretch of road, allow
 
 **🧰 Prerequisites**
 
-- **Python 3** with `pandas`, `numpy`, `scipy`, `matplotlib`, `openpyxl`: `pip install pandas numpy scipy matplotlib openpyxl`
-- **Data to have ready:** the spot speeds observed on the road, either vehicle by vehicle, as speed classes with the number of vehicles in each, or as a CSV or Excel file of lower limit, upper limit and number of vehicles in the same folder as the program; and the maximum acceptable percentage error
+- **Software**
+  - Python 3
+  - `pandas`
+  - `numpy`
+  - `scipy`
+  - `matplotlib`
+  - `openpyxl`
+  - Install the packages with `pip install pandas numpy scipy matplotlib openpyxl`
+- **Data to have ready**
+  - The spot speeds observed on the road: vehicle by vehicle, or as speed classes with the number of vehicles in each
+  - Or a CSV or Excel file of lower limit, upper limit and number of vehicles, in the same folder as the program
+  - Maximum acceptable percentage error
 
 **How it works**
 
@@ -128,8 +138,13 @@ Contains two functions, `space_mean_speed` and `time_mean_speed`, meant to be im
 
 **🧰 Prerequisites**
 
-- **Python 3** only, no extra packages needed
-- **Data to have ready:** the length of the road segment and each vehicle's travel time across it (space mean speed), or each vehicle's speed at a fixed point (time mean speed), in metres and seconds
+- **Software**
+  - Python 3
+  - No extra packages needed
+- **Data to have ready**
+  - For space mean speed: the segment length and each vehicle's travel time across it
+  - For time mean speed: each vehicle's speed at a fixed point
+  - Units: metres and seconds
 
 **How it works**
 
