@@ -46,10 +46,17 @@ Collects and statistically analyzes spot speed data for a stretch of road, allow
   - `matplotlib`
   - `openpyxl`
   - Install the packages with `pip install pandas numpy scipy matplotlib openpyxl`
+- **Choices you will be asked to make** (type the value shown)
+  - Input method: `1` enter speeds vehicle by vehicle, `2` enter speed classes with the number of vehicles in each, `3` read a CSV or Excel file
+  - After the analysis: press Enter to look up a percentile speed, or `No` to skip
 - **Data to have ready**
-  - The spot speeds observed on the road: vehicle by vehicle, or as speed classes with the number of vehicles in each
-  - Or a CSV or Excel file of lower limit, upper limit and number of vehicles, in the same folder as the program
-  - Maximum acceptable percentage error
+  - The speed unit you will use throughout
+  - The maximum acceptable percentage error
+  - The number of points for plotting the curves (more than 1000 recommended)
+  - For option `1`: the class interval and each vehicle's speed
+  - For option `2`: each class's lower and upper limits and number of vehicles
+  - For option `3`: the file name with its extension (`.csv` or `.xlsx`), and the names of the columns holding each value
+  - A name for the output Excel file, typed without `.xlsx`
 
 **How it works**
 
@@ -142,9 +149,9 @@ Contains two functions, `space_mean_speed` and `time_mean_speed`, meant to be im
   - Python 3
   - No extra packages needed
 - **Data to have ready**
-  - For space mean speed: the segment length and each vehicle's travel time across it
-  - For time mean speed: each vehicle's speed at a fixed point
-  - Units: metres and seconds
+  - For space mean speed: the number of vehicles, the length of the road (m) and each vehicle's travel time (s)
+  - For time mean speed: the number of vehicles and each vehicle's spot speed (m/s)
+  - To use the functions in your own program: `from Space_and_Time_Mean_Speed import space_mean_speed, time_mean_speed`
 
 **How it works**
 
