@@ -37,6 +37,11 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 Estimates the modal split between an origin and destination using a multinomial logit model based on user defined utility functions of cost and travel time for each mode of transport.
 
+**🧰 Prerequisites**
+
+- **Python 3** with `numpy`, `sympy`: `pip install numpy sympy`
+- **Data to have ready:** the number of commuters and, for each mode, its name, its utility function in terms of cost and travel time, and its actual cost and travel time
+
 **How it works**
 
 1. The user enters the number of commuters, the number of available modes, and for each mode, a name and a utility function expressed in terms of cost and travel time.
@@ -51,6 +56,11 @@ Estimates the modal split between an origin and destination using a multinomial 
 
 Estimates the modal split among competing modes of transport using a multinomial logit model based on user defined utility functions of in vehicle time, out of vehicle time, and travel expenses.
 
+**🧰 Prerequisites**
+
+- **Python 3** with `numpy`, `sympy`: `pip install numpy sympy`
+- **Data to have ready:** for each mode, the utility coefficients for in vehicle time, out of vehicle time and travel cost along with their actual values; then either the total number of commuters, or the vehicle capacity, headway and percentage filled of a reference mode with the modal split ratio and average occupancy of the other modes
+
 **How it works**
 
 1. For each mode, the user enters a utility function with numeric coefficients for in vehicle time, out of vehicle time, and travel cost, along with the actual time and cost components that make up each variable.
@@ -64,6 +74,11 @@ Estimates the modal split among competing modes of transport using a multinomial
 📄 **File:** [`Predicting_Change_in_Modal_Split_due_to_a_new_contribution.py`](./Predicting_Change_in_Modal_Split_due_to_a_new_contribution.py)
 
 Predicts the change in modal split and ridership between an origin and destination due to an infrastructure change, using a multinomial logit model based on user defined utility functions of cost and travel time for each mode.
+
+**🧰 Prerequisites**
+
+- **Python 3** with `numpy`, `sympy`: `pip install numpy sympy`
+- **Data to have ready:** the number of commuters and each mode's utility function, cost and travel time before the change, the modes added or removed, and the updated costs and travel times after the change
 
 **How it works**
 
