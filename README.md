@@ -40,8 +40,15 @@ Estimates the total n-hour volume and peak-hour volume at each of m stations in 
 
 **🧰 Prerequisites**
 
-- **Python 3** with `pandas`, `numpy`, `openpyxl`: `pip install pandas numpy openpyxl`
-- **Data to have ready:** the control station's count for each of n consecutive time slots, and one count per coverage station taken in the first m−1 of those slots (m−1 must be less than n)
+- **Software**
+  - Python 3
+  - `pandas`
+  - `numpy`
+  - `openpyxl`
+  - Install the packages with `pip install pandas numpy openpyxl`
+- **Data to have ready**
+  - Control station counts for each of n consecutive time slots
+  - One count per coverage station, taken in the first m−1 of those slots (m−1 must be less than n)
 
 **How it works**
 
@@ -59,8 +66,15 @@ Estimates adjusted volumes at each of n coverage count locations in a network, u
 
 **🧰 Prerequisites**
 
-- **Python 3** with `pandas`, `numpy`, `openpyxl`: `pip install pandas numpy openpyxl`
-- **Data to have ready:** the control station's count for the same hours on each of n days, and one count per coverage location for those hours, each paired with one of the control days
+- **Software**
+  - Python 3
+  - `pandas`
+  - `numpy`
+  - `openpyxl`
+  - Install the packages with `pip install pandas numpy openpyxl`
+- **Data to have ready**
+  - Control station counts for the same hours on each of n days
+  - One count per coverage location for those hours, each paired with one of the control days
 
 **How it works**
 
@@ -78,8 +92,15 @@ Estimates expanded and adjusted volumes at coverage count locations in a network
 
 **🧰 Prerequisites**
 
-- **Python 3** with `pandas`, `numpy`, `openpyxl`: `pip install pandas numpy openpyxl`
-- **Data to have ready:** the control station's counts for s time slots on each of d days, using the same slot times every day, and the coverage station's counts for every slot on every day
+- **Software**
+  - Python 3
+  - `pandas`
+  - `numpy`
+  - `openpyxl`
+  - Install the packages with `pip install pandas numpy openpyxl`
+- **Data to have ready**
+  - Control station counts for s time slots on each of d days, with the same slot times every day
+  - Coverage station counts for every slot on every day
 
 **How it works**
 
@@ -97,8 +118,14 @@ Balances an observed origin destination trip matrix to match forecasted zone tot
 
 **🧰 Prerequisites**
 
-- **Python 3** with `pandas`: `pip install pandas`
-- **Data to have ready:** the observed trips between every pair of zones (a square origin destination matrix), the forecast total trip origins and destinations for each zone, and the acceptable error
+- **Software**
+  - Python 3
+  - `pandas`
+  - Install the packages with `pip install pandas`
+- **Data to have ready**
+  - Observed trips between every pair of zones (a square origin destination matrix)
+  - Forecast total trip origins and destinations for each zone
+  - Acceptable error
 
 **How it works**
 
