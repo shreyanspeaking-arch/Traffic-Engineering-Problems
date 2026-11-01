@@ -35,6 +35,11 @@ Every program is interactive: it asks for its inputs one at a time in the termin
 
 Computes and visualizes monthly and annual traffic volume parameters from a dataset of daily vehicle volumes, either read from a CSV or Excel file or entered manually.
 
+**🧰 Prerequisites**
+
+- **Python 3** with `pandas`, `numpy`, `matplotlib`, `openpyxl`: `pip install pandas numpy matplotlib openpyxl`
+- **Data to have ready:** dates and daily vehicle volumes, ideally covering a full year, either typed in or as a CSV or Excel file in the same folder as the program
+
 **How it works**
 
 1. For each month present in the data, the program computes the total volume across all days, the total volume across weekdays only, and the corresponding day counts, then derives the Average Daily Traffic and Average Weekday Traffic for each month.
