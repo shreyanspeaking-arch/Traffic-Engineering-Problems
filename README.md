@@ -41,8 +41,16 @@ Analyzes a deterministic D/D/1 queue at a single service point. It computes queu
 
 **🧰 Prerequisites**
 
-- **Python 3** with `numpy`, `sympy`, `matplotlib`: `pip install numpy sympy matplotlib`
-- **Data to have ready:** the times at which the arrival and departure rates change, the rate or average headway at each change, and the number of vehicles already queued at the start
+- **Software**
+  - Python 3
+  - `numpy`
+  - `sympy`
+  - `matplotlib`
+  - Install the packages with `pip install numpy sympy matplotlib`
+- **Data to have ready**
+  - Times at which the arrival and departure rates change
+  - The rate, or the average headway, at each change
+  - Number of vehicles already queued at the start
 
 **How it works**
 
@@ -72,8 +80,17 @@ Analyzes deterministic queue buildup and dissipation over a series of time inter
 
 **🧰 Prerequisites**
 
-- **Python 3** with `pandas`, `numpy`, `matplotlib`, `openpyxl`: `pip install pandas numpy matplotlib openpyxl`
-- **Data to have ready:** for each time interval its start and end time, arrival rate, departure rate and, for per-lane rates, the number of lanes, either typed in or as a CSV or Excel file in the same folder as the program
+- **Software**
+  - Python 3
+  - `pandas`
+  - `numpy`
+  - `matplotlib`
+  - `openpyxl`
+  - Install the packages with `pip install pandas numpy matplotlib openpyxl`
+- **Data to have ready**
+  - For each time interval: start time, end time, arrival rate and departure rate
+  - Number of lanes, if the rates are per lane
+  - Either typed in, or as a CSV or Excel file in the same folder as the program
 
 **How it works**
 
@@ -159,8 +176,12 @@ Analyzes an M/D/1 queue: random, Poisson distributed arrivals, deterministic (fi
 
 **🧰 Prerequisites**
 
-- **Python 3** only, no extra packages needed
-- **Data to have ready:** the average arrival rate, and the average departure rate or the average headway between departures
+- **Software**
+  - Python 3
+  - No extra packages needed
+- **Data to have ready**
+  - Average arrival rate
+  - Average departure rate, or average headway between departures
 
 **How it works**
 
@@ -178,8 +199,13 @@ Analyzes an M/M/1 queue: random, Poisson distributed arrivals, random, exponenti
 
 **🧰 Prerequisites**
 
-- **Python 3** only, no extra packages needed
-- **Data to have ready:** the average arrival and departure rates, either directly, as average headways, or as vehicle counts over timed intervals
+- **Software**
+  - Python 3
+  - No extra packages needed
+- **Data to have ready**
+  - Average arrival rate
+  - Average departure rate
+  - Either directly, as average headways, or as vehicle counts over timed intervals
 
 **How it works**
 
@@ -197,8 +223,13 @@ Analyzes an M/M/N queue: random, Poisson distributed arrivals, random, exponenti
 
 **🧰 Prerequisites**
 
-- **Python 3** only, no extra packages needed
-- **Data to have ready:** the average arrival rate, the average departure rate per channel (directly, as headways or as counts over timed intervals), and the number of service channels
+- **Software**
+  - Python 3
+  - No extra packages needed
+- **Data to have ready**
+  - Average arrival rate
+  - Average departure rate per channel, directly, as headways or as counts over timed intervals
+  - Number of service channels
 
 **How it works**
 
